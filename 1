@@ -890,5 +890,42 @@ addPlayerButton(PlayerScrollingFrame, "Refresh", function()
 
 end)
 
-addPlayerToggle(PlayerScrollingFrame, "a", function()
+addPlayerLabel(PlayerScrollingFrame, "Body parts")
+
+addPlayerButton(PlayerScrollingFrame, "FE Korblox", function()
+	local args = {
+		[1] = "CharacterChange",
+		[2] = {
+			[1] = 1,
+			[2] = 1,
+			[3] = 1,
+			[4] = 139607718,
+			[5] = 1,
+			[6] = 1
+		},
+		[3] = "AllBlocky"
+	}
+	
+	game:GetService("ReplicatedStorage"):WaitForChild("RE"):WaitForChild("1Avata1rOrigina1l"):FireServer(unpack(args))
+	
 end)
+
+addPlayerButton(PlayerScrollingFrame, "FE Headles", function()
+	local args = {
+		[1] = "CharacterChange",
+		[2] = {
+			[1] = 1,
+			[2] = 1,
+			[3] = 1,
+			[4] = 1,
+			[5] = 1,
+			[6] = 134082579
+		},
+		[3] = "AllBlocky"
+	}
+	
+	game:GetService("ReplicatedStorage"):WaitForChild("RE"):WaitForChild("1Avata1rOrigina1l"):FireServer(unpack(args))
+	
+end)
+
+
