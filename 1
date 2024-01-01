@@ -843,7 +843,7 @@ function addPlayerButton(Tab, text, callback)
 	Button.AutoButtonColor = false
 	Button.Font = Enum.Font.GothamBold
 	Button.Text = text
-	Button.TextColor3 = Color3.fromRGB(255, 255, 255)
+	Button.TextColor3 = Color3.fromRGB(255, 0, 4)
 	Button.TextSize = 16.000
 	Button.TextXAlignment = Enum.TextXAlignment.Center
 	Button.BackgroundTransparency = 0.950
@@ -887,84 +887,6 @@ addPlayerButton(PlayerScrollingFrame, "Refresh", function()
 	}
 
 	game:GetService("ReplicatedStorage"):WaitForChild("RE"):WaitForChild("1Avata1rOrigina1l"):FireServer(unpack(args))
-
-end)
-
-addPlayerLabel(PlayerScrollingFrame, "Body parts")
-
-addPlayerButton(PlayerScrollingFrame, "FE Korblox", function()
-	local args = {
-		[1] = "CharacterChange",
-		[2] = {
-			[1] = 1,
-			[2] = 1,
-			[3] = 1,
-			[4] = 139607718,
-			[5] = 1,
-			[6] = 1
-		},
-		[3] = "AllBlocky"
-	}
-
-	game:GetService("ReplicatedStorage"):WaitForChild("RE"):WaitForChild("1Avata1rOrigina1l"):FireServer(unpack(args))
-
-end)
-
-addPlayerButton(PlayerScrollingFrame, "FE Headles", function()
-	local args = {
-		[1] = "CharacterChange",
-		[2] = {
-			[1] = 1,
-			[2] = 1,
-			[3] = 1,
-			[4] = 1,
-			[5] = 1,
-			[6] = 134082579
-		},
-		[3] = "AllBlocky"
-	}
-
-	game:GetService("ReplicatedStorage"):WaitForChild("RE"):WaitForChild("1Avata1rOrigina1l"):FireServer(unpack(args))
-
-end)
-
-
-addPlayerLabel(PlayerScrollingFrame, "Whole body")
-
-addPlayerButton(PlayerScrollingFrame, "FE Naked", function()
-	local args = {
-		[1] = "wear",
-		[2] = 7002762147
-	}
-
-	game:GetService("ReplicatedStorage"):WaitForChild("RE"):WaitForChild("1Updat1eAvata1r"):FireServer(unpack(args))
-
-	wait(1)
-	local args = {
-		[1] = "wear",
-		[2] = 2485613084
-	}
-
-	game:GetService("ReplicatedStorage"):WaitForChild("RE"):WaitForChild("1Updat1eAvata1r"):FireServer(unpack(args))
-
-	wait(1)
-
-
-	local args = {
-		[1] = "wear",
-		[2] = 7002762147
-	}
-
-	game:GetService("ReplicatedStorage"):WaitForChild("RE"):WaitForChild("1Updat1eAvata1r"):FireServer(unpack(args))
-	wait(1)
-
-	local args = {
-		[1] = "wear",
-		[2] = 2485613084
-	}
-
-	game:GetService("ReplicatedStorage"):WaitForChild("RE"):WaitForChild("1Updat1eAvata1r"):FireServer(unpack(args))
-
 
 end)
 
