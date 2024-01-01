@@ -996,3 +996,22 @@ addPlayerButton(PlayerScrollingFrame, "FE Faceless", function()
 
 end)
 
+addPlayerButton(PlayerScrollingFrame, "FE Invisible", function()
+	local args = {
+		[1] = "CharacterSizeDown",
+		[2] = 5
+	}
+
+	game:GetService("ReplicatedStorage"):WaitForChild("RE"):WaitForChild("1Clothe1s"):FireServer(unpack(args))
+
+end)
+
+addPlayerButton(PlayerScrollingFrame, "Visible", function()
+	local args = {
+		[1] = "CharacterSizeUp",
+		[2] = 1
+	}
+
+	game:GetService("ReplicatedStorage"):WaitForChild("RE"):WaitForChild("1Clothe1s"):FireServer(unpack(args))
+
+end)
