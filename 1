@@ -3,69 +3,37 @@ for i,v in pairs(game.CoreGui:GetChildren()) do
 		v:Destroy()
 	end
 end
-
 local ScreenGuiSalakitos = Instance.new("ScreenGui")
-local SalakitosFrame = Instance.new("Frame")
-local TitleFrame = Instance.new("Frame")
-local TitleName = Instance.new("TextLabel")
-local ScrollingFrameSide = Instance.new("ScrollingFrame")
-local UILIstLayoutSide = Instance.new("UIListLayout")
-local WelcomeFrame = Instance.new("Frame")
-local WelcomeImageLabel = Instance.new("ImageLabel")
-local UICorner = Instance.new("UICorner")
-local WelcomeTextLabel = Instance.new("TextLabel")
-local AutobusFrame = Instance.new("Frame")
-local UICorner_2 = Instance.new("UICorner")
-local AutoBusCreditsImage = Instance.new("ImageLabel")
-local UICorner_3 = Instance.new("UICorner")
-local AutoBusCredit = Instance.new("TextLabel")
-local aizakkuFrame = Instance.new("Frame")
-local UICorner_4 = Instance.new("UICorner")
-local AizakkuImageLabel = Instance.new("ImageLabel")
-local UICorner_5 = Instance.new("UICorner")
-local AizakkuCredits = Instance.new("TextLabel")
-local PlayerFrame = Instance.new("Frame")
-local PlayerTextBoxFrame = Instance.new("Frame")
-local SearchPlayerFrame = Instance.new("TextBox")
-local Logo = Instance.new("ImageLabel")
-local PlayerScrollingFrame = Instance.new("ScrollingFrame")
-local UIListLayoutPlayer = Instance.new("UIListLayout")
-local VehicleFrame = Instance.new("Frame")
-local VehicleTextBoxFrame = Instance.new("Frame")
-local SearchVehicleFrame = Instance.new("TextBox")
-local Logo_2 = Instance.new("ImageLabel")
-local VehicleScrollingFrame = Instance.new("ScrollingFrame")
-local UIListLayoutVehicle = Instance.new("UIListLayout")
-local ObjetsFrame = Instance.new("Frame")
-local ObjetsTextBoxFrame = Instance.new("Frame")
-local SearchObejtsFrame = Instance.new("TextBox")
-local Logo_3 = Instance.new("ImageLabel")
-local ObjetsScrollingFrame = Instance.new("ScrollingFrame")
-local UIListLayoutObjets = Instance.new("UIListLayout")
-local WaypointsFrame = Instance.new("Frame")
-local WaypointsTextBoxFrame = Instance.new("Frame")
-local SearchWaypointsFrame = Instance.new("TextBox")
-local Logo_4 = Instance.new("ImageLabel")
-local WaypointsScrollingFrame = Instance.new("ScrollingFrame")
-local UIListLayoutWaypoints = Instance.new("UIListLayout")
-local TortureFrame = Instance.new("Frame")
-local TortureTextBoxFrame = Instance.new("Frame")
-local TortureWaypointsFrame = Instance.new("TextBox")
-local Logo_5 = Instance.new("ImageLabel")
-local TortureScrollingFrame = Instance.new("ScrollingFrame")
-local UIListLayoutTorture = Instance.new("UIListLayout")
-local HouseFrame = Instance.new("Frame")
-local HouseTextBoxFrame = Instance.new("Frame")
-local HouseWaypointsFrame = Instance.new("TextBox")
-local Logo_6 = Instance.new("ImageLabel")
-local HouseScrollingFrame = Instance.new("ScrollingFrame")
-local UIListLayoutHouse = Instance.new("UIListLayout")
-local OthersFrame = Instance.new("Frame")
-local OthersTextBoxFrame = Instance.new("Frame")
-local OthersWaypointsFrame = Instance.new("TextBox")
-local Logo_7 = Instance.new("ImageLabel")
-local OthersScrollingFrame = Instance.new("ScrollingFrame")
-local UIListLayoutOthers = Instance.new("UIListLayout")
+local FrameTodo = Instance.new("VideoFrame")
+local TextLabelTitulo = Instance.new("TextLabel")
+local ScrollingFrameBotones = Instance.new("ScrollingFrame")
+local UIListLayout = Instance.new("UIListLayout")
+local TextButtonEliminar = Instance.new("TextButton")
+local Selectedclose = Instance.new("ImageLabel")
+local TextButtonOpciones = Instance.new("TextButton")
+local Selectedsettings = Instance.new("ImageLabel")
+local ScrollingFrameJugador = Instance.new("ScrollingFrame")
+local UIListLayout_2 = Instance.new("UIListLayout")
+local ScrollingFrameLugares = Instance.new("ScrollingFrame")
+local UIListLayout_3 = Instance.new("UIListLayout")
+local ScrollingFrameOtros = Instance.new("ScrollingFrame")
+local UIListLayout_4 = Instance.new("UIListLayout")
+local ScrollingFrameObjetos = Instance.new("ScrollingFrame")
+local UIListLayout_5 = Instance.new("UIListLayout")
+local ScrollingFrameKill = Instance.new("ScrollingFrame")
+local UIListLayout_6 = Instance.new("UIListLayout")
+local ScrollingFrameCasas = Instance.new("ScrollingFrame")
+local UIListLayout_7 = Instance.new("UIListLayout")
+local ScrollingFrameAjustes = Instance.new("ScrollingFrame")
+local UIListLayout_8 = Instance.new("UIListLayout")
+local ScrollingFrameCreditos = Instance.new("ScrollingFrame")
+local UIListLayout_9 = Instance.new("UIListLayout")
+local FrameMenu = Instance.new("Frame")
+local TextLabelWelcome = Instance.new("TextLabel")
+local FrameAdorno = Instance.new("Frame")
+local ImageLabelPJ = Instance.new("ImageLabel")
+local FrameSoporte = Instance.new("Frame")
+local TextButtonAB = Instance.new("TextButton")
 
 -- Properties:
 
@@ -73,947 +41,262 @@ ScreenGuiSalakitos.Name = "ScreenGuiSalakitos"
 ScreenGuiSalakitos.Parent = game.CoreGui
 ScreenGuiSalakitos.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
 
-SalakitosFrame.Name = "SalakitosFrame"
-SalakitosFrame.Parent = ScreenGuiSalakitos
-SalakitosFrame.BackgroundColor3 = Color3.fromRGB(50, 50, 50)
-SalakitosFrame.BorderColor3 = Color3.fromRGB(0, 0, 0)
-SalakitosFrame.BorderSizePixel = 0
-SalakitosFrame.Position = UDim2.new(0.245643541, 0, 0.285530627, 0)
-SalakitosFrame.Size = UDim2.new(0, 410, 0, 210)
-
-TitleFrame.Name = "TitleFrame"
-TitleFrame.Parent = SalakitosFrame
-TitleFrame.BackgroundColor3 = Color3.fromRGB(45, 45, 45)
-TitleFrame.BorderColor3 = Color3.fromRGB(0, 0, 0)
-TitleFrame.BorderSizePixel = 0
-TitleFrame.Size = UDim2.new(0, 410, 0, 21)
-
-TitleName.Name = "TitleName"
-TitleName.Parent = TitleFrame
-TitleName.BackgroundColor3 = Color3.fromRGB(255, 0, 0)
-TitleName.BackgroundTransparency = 1.000
-TitleName.BorderColor3 = Color3.fromRGB(0, 0, 0)
-TitleName.BorderSizePixel = 0
-TitleName.Position = UDim2.new(0.0170731712, 0, 0.0476190485, 0)
-TitleName.Size = UDim2.new(0, 243, 0, 18)
-TitleName.Font = Enum.Font.Gotham
-TitleName.Text = "SalaKitosHub"
-TitleName.TextColor3 = Color3.fromRGB(255, 0, 0)
-TitleName.TextSize = 14.000
-TitleName.TextXAlignment = Enum.TextXAlignment.Left
-
-ScrollingFrameSide.Name = "ScrollingFrameSide"
-ScrollingFrameSide.Parent = SalakitosFrame
-ScrollingFrameSide.Active = true
-ScrollingFrameSide.BackgroundColor3 = Color3.fromRGB(45, 45, 45)
-ScrollingFrameSide.BorderColor3 = Color3.fromRGB(0, 0, 0)
-ScrollingFrameSide.BorderSizePixel = 0
-ScrollingFrameSide.Position = UDim2.new(0, 0, 0.100000001, 0)
-ScrollingFrameSide.Size = UDim2.new(0, 118, 0, 189)
-ScrollingFrameSide.ScrollBarImageColor3 = Color3.fromRGB(0, 0, 0)
-ScrollingFrameSide.ScrollBarThickness = 0
-
-UILIstLayoutSide.Name = "UILIstLayoutSide"
-UILIstLayoutSide.Parent = ScrollingFrameSide
-UILIstLayoutSide.SortOrder = Enum.SortOrder.LayoutOrder
-UILIstLayoutSide.Padding = UDim.new(0, 5)
-
-WelcomeFrame.Name = "WelcomeFrame"
-WelcomeFrame.Parent = SalakitosFrame
-WelcomeFrame.BackgroundColor3 = Color3.fromRGB(50, 50, 50)
-WelcomeFrame.BorderColor3 = Color3.fromRGB(0, 0, 0)
-WelcomeFrame.BorderSizePixel = 0
-WelcomeFrame.Position = UDim2.new(0.28780511, 0, 0.100000001, 0)
-WelcomeFrame.Size = UDim2.new(0, 292, 0, 189)
-
-WelcomeImageLabel.Name = "WelcomeImageLabel"
-WelcomeImageLabel.Parent = WelcomeFrame
-WelcomeImageLabel.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-WelcomeImageLabel.BackgroundTransparency = 1.000
-WelcomeImageLabel.BorderColor3 = Color3.fromRGB(0, 0, 0)
-WelcomeImageLabel.BorderSizePixel = 0
-WelcomeImageLabel.Position = UDim2.new(0.0273972601, 0, 0.0476190485, 0)
-WelcomeImageLabel.Size = UDim2.new(0, 60, 0, 60)
-WelcomeImageLabel.Image = "rbxthumb://type=AvatarHeadShot&id=1&w=420&h=420"
-
-UICorner.CornerRadius = UDim.new(0, 5)
-UICorner.Parent = WelcomeImageLabel
-
-WelcomeTextLabel.Name = "WelcomeTextLabel"
-WelcomeTextLabel.Parent = WelcomeFrame
-WelcomeTextLabel.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-WelcomeTextLabel.BackgroundTransparency = 1.000
-WelcomeTextLabel.BorderColor3 = Color3.fromRGB(0, 0, 0)
-WelcomeTextLabel.BorderSizePixel = 0
-WelcomeTextLabel.Position = UDim2.new(0.270547956, 0, 0.105820104, 0)
-WelcomeTextLabel.Size = UDim2.new(0, 200, 0, 38)
-WelcomeTextLabel.Font = Enum.Font.GothamBold
-WelcomeTextLabel.TextColor3 = Color3.fromRGB(255, 0, 4)
-WelcomeTextLabel.TextScaled = true
-WelcomeTextLabel.TextSize = 14.000
-WelcomeTextLabel.TextWrapped = true
-
-AutobusFrame.Name = "AutobusFrame"
-AutobusFrame.Parent = WelcomeFrame
-AutobusFrame.BackgroundColor3 = Color3.fromRGB(35, 35, 35)
-AutobusFrame.BorderColor3 = Color3.fromRGB(0, 0, 0)
-AutobusFrame.BorderSizePixel = 0
-AutobusFrame.Position = UDim2.new(0.0547945201, 0, 0.439153433, 0)
-AutobusFrame.Size = UDim2.new(0, 260, 0, 40)
-
-UICorner_2.CornerRadius = UDim.new(0, 5)
-UICorner_2.Parent = AutobusFrame
-
-AutoBusCreditsImage.Name = "AutoBusCreditsImage"
-AutoBusCreditsImage.Parent = AutobusFrame
-AutoBusCreditsImage.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-AutoBusCreditsImage.BackgroundTransparency = 1.000
-AutoBusCreditsImage.BorderColor3 = Color3.fromRGB(0, 0, 0)
-AutoBusCreditsImage.BorderSizePixel = 0
-AutoBusCreditsImage.Position = UDim2.new(0.0153846154, 0, 0.0500000007, 0)
-AutoBusCreditsImage.Size = UDim2.new(0, 35, 0, 35)
-AutoBusCreditsImage.Image = "rbxthumb://type=AvatarHeadShot&id=1&w=420&h=420"
-
-UICorner_3.CornerRadius = UDim.new(0, 50)
-UICorner_3.Parent = AutoBusCreditsImage
-
-AutoBusCredit.Name = "AutoBusCredit"
-AutoBusCredit.Parent = AutobusFrame
-AutoBusCredit.BackgroundColor3 = Color3.fromRGB(255, 0, 4)
-AutoBusCredit.BackgroundTransparency = 1.000
-AutoBusCredit.BorderColor3 = Color3.fromRGB(0, 0, 0)
-AutoBusCredit.BorderSizePixel = 0
-AutoBusCredit.Position = UDim2.new(0.200000003, 0, 0.174999997, 0)
-AutoBusCredit.Size = UDim2.new(0, 199, 0, 25)
-AutoBusCredit.Font = Enum.Font.Gotham
-AutoBusCredit.Text = "autobus_ | Owner"
-AutoBusCredit.TextColor3 = Color3.fromRGB(255, 0, 4)
-AutoBusCredit.TextSize = 18.000
-AutoBusCredit.TextWrapped = true
-
-aizakkuFrame.Name = "aizakkuFrame"
-aizakkuFrame.Parent = WelcomeFrame
-aizakkuFrame.BackgroundColor3 = Color3.fromRGB(35, 35, 35)
-aizakkuFrame.BorderColor3 = Color3.fromRGB(0, 0, 0)
-aizakkuFrame.BorderSizePixel = 0
-aizakkuFrame.Position = UDim2.new(0.0547945201, 0, 0.714285731, 0)
-aizakkuFrame.Size = UDim2.new(0, 260, 0, 40)
-
-UICorner_4.CornerRadius = UDim.new(0, 5)
-UICorner_4.Parent = aizakkuFrame
-
-AizakkuImageLabel.Name = "AizakkuImageLabel"
-AizakkuImageLabel.Parent = aizakkuFrame
-AizakkuImageLabel.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-AizakkuImageLabel.BackgroundTransparency = 1.000
-AizakkuImageLabel.BorderColor3 = Color3.fromRGB(0, 0, 0)
-AizakkuImageLabel.BorderSizePixel = 0
-AizakkuImageLabel.Position = UDim2.new(0.0153846154, 0, 0.0500000007, 0)
-AizakkuImageLabel.Size = UDim2.new(0, 35, 0, 35)
-AizakkuImageLabel.Image = "rbxthumb://type=AvatarHeadShot&id=1&w=420&h=420"
-
-UICorner_5.CornerRadius = UDim.new(0, 50)
-UICorner_5.Parent = AizakkuImageLabel
-
-AizakkuCredits.Name = "AizakkuCredits"
-AizakkuCredits.Parent = aizakkuFrame
-AizakkuCredits.BackgroundColor3 = Color3.fromRGB(255, 0, 4)
-AizakkuCredits.BackgroundTransparency = 1.000
-AizakkuCredits.BorderColor3 = Color3.fromRGB(0, 0, 0)
-AizakkuCredits.BorderSizePixel = 0
-AizakkuCredits.Position = UDim2.new(0.200000003, 0, 0.174999997, 0)
-AizakkuCredits.Size = UDim2.new(0, 199, 0, 25)
-AizakkuCredits.Font = Enum.Font.Gotham
-AizakkuCredits.Text = "aizakku5042 | UI Designer"
-AizakkuCredits.TextColor3 = Color3.fromRGB(255, 0, 4)
-AizakkuCredits.TextScaled = true
-AizakkuCredits.TextSize = 18.000
-AizakkuCredits.TextWrapped = true
-
-PlayerFrame.Name = "PlayerFrame"
-PlayerFrame.Parent = SalakitosFrame
-PlayerFrame.BackgroundColor3 = Color3.fromRGB(50, 50, 50)
-PlayerFrame.BorderColor3 = Color3.fromRGB(0, 0, 0)
-PlayerFrame.BorderSizePixel = 0
-PlayerFrame.Position = UDim2.new(0.287804872, 0, 0.100000001, 0)
-PlayerFrame.Size = UDim2.new(0, 292, 0, 189)
-PlayerFrame.Visible = false
-
-PlayerTextBoxFrame.Name = "PlayerTextBoxFrame"
-PlayerTextBoxFrame.Parent = PlayerFrame
-PlayerTextBoxFrame.BackgroundColor3 = Color3.fromRGB(45, 45, 45)
-PlayerTextBoxFrame.BorderColor3 = Color3.fromRGB(0, 0, 0)
-PlayerTextBoxFrame.BorderSizePixel = 0
-PlayerTextBoxFrame.Position = UDim2.new(0.0445205495, 0, 0.0476190485, 0)
-PlayerTextBoxFrame.Size = UDim2.new(0, 264, 0, 26)
-
-SearchPlayerFrame.Name = "SearchPlayerFrame"
-SearchPlayerFrame.Parent = PlayerTextBoxFrame
-SearchPlayerFrame.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-SearchPlayerFrame.BackgroundTransparency = 1.000
-SearchPlayerFrame.BorderColor3 = Color3.fromRGB(0, 0, 0)
-SearchPlayerFrame.BorderSizePixel = 0
-SearchPlayerFrame.Size = UDim2.new(0, 264, 0, 26)
-SearchPlayerFrame.Font = Enum.Font.SourceSans
-SearchPlayerFrame.PlaceholderColor3 = Color3.fromRGB(255, 255, 255)
-SearchPlayerFrame.PlaceholderText = "SEARCH HERE"
-SearchPlayerFrame.Text = ""
-SearchPlayerFrame.TextColor3 = Color3.fromRGB(255, 255, 255)
-SearchPlayerFrame.TextSize = 18.000
-
-Logo.Name = "Logo"
-Logo.Parent = PlayerTextBoxFrame
-Logo.BackgroundTransparency = 1.000
-Logo.BorderSizePixel = 0
-Logo.Position = UDim2.new(0, 0, 0.115384616, 0)
-Logo.Size = UDim2.new(0, 20, 0, 20)
-Logo.Image = "http://www.roblox.com/asset/?id=6031154871"
-
-PlayerScrollingFrame.Name = "PlayerScrollingFrame"
-PlayerScrollingFrame.Parent = PlayerFrame
-PlayerScrollingFrame.Active = true
-PlayerScrollingFrame.BackgroundColor3 = Color3.fromRGB(50, 50, 50)
-PlayerScrollingFrame.BorderColor3 = Color3.fromRGB(0, 0, 0)
-PlayerScrollingFrame.BorderSizePixel = 0
-PlayerScrollingFrame.Position = UDim2.new(0, 0, 0.232804239, 0)
-PlayerScrollingFrame.Size = UDim2.new(0, 292, 0, 145)
-PlayerScrollingFrame.ScrollBarImageColor3 = Color3.fromRGB(0, 0, 0)
-PlayerScrollingFrame.ScrollBarThickness = 0
-
-UIListLayoutPlayer.Name = "UIListLayoutPlayer"
-UIListLayoutPlayer.Parent = PlayerScrollingFrame
-UIListLayoutPlayer.SortOrder = Enum.SortOrder.LayoutOrder
-UIListLayoutPlayer.Padding = UDim.new(0, 4)
-
-VehicleFrame.Name = "VehicleFrame"
-VehicleFrame.Parent = SalakitosFrame
-VehicleFrame.BackgroundColor3 = Color3.fromRGB(50, 50, 50)
-VehicleFrame.BorderColor3 = Color3.fromRGB(0, 0, 0)
-VehicleFrame.BorderSizePixel = 0
-VehicleFrame.Position = UDim2.new(0.287804872, 0, 0.100000001, 0)
-VehicleFrame.Size = UDim2.new(0, 292, 0, 189)
-VehicleFrame.Visible = false
-
-VehicleTextBoxFrame.Name = "VehicleTextBoxFrame"
-VehicleTextBoxFrame.Parent = VehicleFrame
-VehicleTextBoxFrame.BackgroundColor3 = Color3.fromRGB(45, 45, 45)
-VehicleTextBoxFrame.BorderColor3 = Color3.fromRGB(0, 0, 0)
-VehicleTextBoxFrame.BorderSizePixel = 0
-VehicleTextBoxFrame.Position = UDim2.new(0.0445205495, 0, 0.0476190485, 0)
-VehicleTextBoxFrame.Size = UDim2.new(0, 264, 0, 26)
-
-SearchVehicleFrame.Name = "SearchVehicleFrame"
-SearchVehicleFrame.Parent = VehicleTextBoxFrame
-SearchVehicleFrame.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-SearchVehicleFrame.BackgroundTransparency = 1.000
-SearchVehicleFrame.BorderColor3 = Color3.fromRGB(0, 0, 0)
-SearchVehicleFrame.BorderSizePixel = 0
-SearchVehicleFrame.Size = UDim2.new(0, 264, 0, 26)
-SearchVehicleFrame.Font = Enum.Font.SourceSans
-SearchVehicleFrame.PlaceholderColor3 = Color3.fromRGB(255, 255, 255)
-SearchVehicleFrame.PlaceholderText = "SEARCH HERE"
-SearchVehicleFrame.Text = ""
-SearchVehicleFrame.TextColor3 = Color3.fromRGB(255, 255, 255)
-SearchVehicleFrame.TextSize = 18.000
-
-Logo_2.Name = "Logo"
-Logo_2.Parent = VehicleTextBoxFrame
-Logo_2.BackgroundTransparency = 1.000
-Logo_2.BorderSizePixel = 0
-Logo_2.Position = UDim2.new(0, 0, 0.115384616, 0)
-Logo_2.Size = UDim2.new(0, 20, 0, 20)
-Logo_2.Image = "http://www.roblox.com/asset/?id=6031154871"
-
-VehicleScrollingFrame.Name = "VehicleScrollingFrame"
-VehicleScrollingFrame.Parent = VehicleFrame
-VehicleScrollingFrame.Active = true
-VehicleScrollingFrame.BackgroundColor3 = Color3.fromRGB(50, 50, 50)
-VehicleScrollingFrame.BorderColor3 = Color3.fromRGB(0, 0, 0)
-VehicleScrollingFrame.BorderSizePixel = 0
-VehicleScrollingFrame.Position = UDim2.new(0, 0, 0.232804239, 0)
-VehicleScrollingFrame.Size = UDim2.new(0, 292, 0, 145)
-VehicleScrollingFrame.ScrollBarImageColor3 = Color3.fromRGB(0, 0, 0)
-VehicleScrollingFrame.ScrollBarThickness = 0
-
-UIListLayoutVehicle.Name = "UIListLayoutVehicle"
-UIListLayoutVehicle.Parent = VehicleScrollingFrame
-UIListLayoutVehicle.SortOrder = Enum.SortOrder.LayoutOrder
-UIListLayoutVehicle.Padding = UDim.new(0, 4)
-
-ObjetsFrame.Name = "ObjetsFrame"
-ObjetsFrame.Parent = SalakitosFrame
-ObjetsFrame.BackgroundColor3 = Color3.fromRGB(50, 50, 50)
-ObjetsFrame.BorderColor3 = Color3.fromRGB(0, 0, 0)
-ObjetsFrame.BorderSizePixel = 0
-ObjetsFrame.Position = UDim2.new(0.287804872, 0, 0.100000001, 0)
-ObjetsFrame.Size = UDim2.new(0, 292, 0, 189)
-ObjetsFrame.Visible = false
-
-ObjetsTextBoxFrame.Name = "ObjetsTextBoxFrame"
-ObjetsTextBoxFrame.Parent = ObjetsFrame
-ObjetsTextBoxFrame.BackgroundColor3 = Color3.fromRGB(45, 45, 45)
-ObjetsTextBoxFrame.BorderColor3 = Color3.fromRGB(0, 0, 0)
-ObjetsTextBoxFrame.BorderSizePixel = 0
-ObjetsTextBoxFrame.Position = UDim2.new(0.0445205495, 0, 0.0476190485, 0)
-ObjetsTextBoxFrame.Size = UDim2.new(0, 264, 0, 26)
-
-SearchObejtsFrame.Name = "SearchObejtsFrame"
-SearchObejtsFrame.Parent = ObjetsTextBoxFrame
-SearchObejtsFrame.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-SearchObejtsFrame.BackgroundTransparency = 1.000
-SearchObejtsFrame.BorderColor3 = Color3.fromRGB(0, 0, 0)
-SearchObejtsFrame.BorderSizePixel = 0
-SearchObejtsFrame.Size = UDim2.new(0, 264, 0, 26)
-SearchObejtsFrame.Font = Enum.Font.SourceSans
-SearchObejtsFrame.PlaceholderColor3 = Color3.fromRGB(255, 255, 255)
-SearchObejtsFrame.PlaceholderText = "SEARCH HERE"
-SearchObejtsFrame.Text = ""
-SearchObejtsFrame.TextColor3 = Color3.fromRGB(255, 255, 255)
-SearchObejtsFrame.TextSize = 18.000
-
-Logo_3.Name = "Logo"
-Logo_3.Parent = ObjetsTextBoxFrame
-Logo_3.BackgroundTransparency = 1.000
-Logo_3.BorderSizePixel = 0
-Logo_3.Position = UDim2.new(0, 0, 0.115384616, 0)
-Logo_3.Size = UDim2.new(0, 20, 0, 20)
-Logo_3.Image = "http://www.roblox.com/asset/?id=6031154871"
-
-ObjetsScrollingFrame.Name = "ObjetsScrollingFrame"
-ObjetsScrollingFrame.Parent = ObjetsFrame
-ObjetsScrollingFrame.Active = true
-ObjetsScrollingFrame.BackgroundColor3 = Color3.fromRGB(50, 50, 50)
-ObjetsScrollingFrame.BorderColor3 = Color3.fromRGB(0, 0, 0)
-ObjetsScrollingFrame.BorderSizePixel = 0
-ObjetsScrollingFrame.Position = UDim2.new(0, 0, 0.232804239, 0)
-ObjetsScrollingFrame.Size = UDim2.new(0, 292, 0, 145)
-ObjetsScrollingFrame.ScrollBarImageColor3 = Color3.fromRGB(0, 0, 0)
-ObjetsScrollingFrame.ScrollBarThickness = 0
-
-UIListLayoutObjets.Name = "UIListLayoutObjets"
-UIListLayoutObjets.Parent = ObjetsScrollingFrame
-UIListLayoutObjets.SortOrder = Enum.SortOrder.LayoutOrder
-UIListLayoutObjets.Padding = UDim.new(0, 4)
-
-WaypointsFrame.Name = "WaypointsFrame"
-WaypointsFrame.Parent = SalakitosFrame
-WaypointsFrame.BackgroundColor3 = Color3.fromRGB(50, 50, 50)
-WaypointsFrame.BorderColor3 = Color3.fromRGB(0, 0, 0)
-WaypointsFrame.BorderSizePixel = 0
-WaypointsFrame.Position = UDim2.new(0.287804872, 0, 0.100000001, 0)
-WaypointsFrame.Size = UDim2.new(0, 292, 0, 189)
-WaypointsFrame.Visible = false
-
-WaypointsTextBoxFrame.Name = "WaypointsTextBoxFrame"
-WaypointsTextBoxFrame.Parent = WaypointsFrame
-WaypointsTextBoxFrame.BackgroundColor3 = Color3.fromRGB(45, 45, 45)
-WaypointsTextBoxFrame.BorderColor3 = Color3.fromRGB(0, 0, 0)
-WaypointsTextBoxFrame.BorderSizePixel = 0
-WaypointsTextBoxFrame.Position = UDim2.new(0.0445205495, 0, 0.0476190485, 0)
-WaypointsTextBoxFrame.Size = UDim2.new(0, 264, 0, 26)
-
-SearchWaypointsFrame.Name = "SearchWaypointsFrame"
-SearchWaypointsFrame.Parent = WaypointsTextBoxFrame
-SearchWaypointsFrame.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-SearchWaypointsFrame.BackgroundTransparency = 1.000
-SearchWaypointsFrame.BorderColor3 = Color3.fromRGB(0, 0, 0)
-SearchWaypointsFrame.BorderSizePixel = 0
-SearchWaypointsFrame.Size = UDim2.new(0, 264, 0, 26)
-SearchWaypointsFrame.Font = Enum.Font.SourceSans
-SearchWaypointsFrame.PlaceholderColor3 = Color3.fromRGB(255, 255, 255)
-SearchWaypointsFrame.PlaceholderText = "SEARCH HERE"
-SearchWaypointsFrame.Text = ""
-SearchWaypointsFrame.TextColor3 = Color3.fromRGB(255, 255, 255)
-SearchWaypointsFrame.TextSize = 18.000
-
-Logo_4.Name = "Logo"
-Logo_4.Parent = WaypointsTextBoxFrame
-Logo_4.BackgroundTransparency = 1.000
-Logo_4.BorderSizePixel = 0
-Logo_4.Position = UDim2.new(0, 0, 0.115384616, 0)
-Logo_4.Size = UDim2.new(0, 20, 0, 20)
-Logo_4.Image = "http://www.roblox.com/asset/?id=6031154871"
-
-WaypointsScrollingFrame.Name = "WaypointsScrollingFrame"
-WaypointsScrollingFrame.Parent = WaypointsFrame
-WaypointsScrollingFrame.Active = true
-WaypointsScrollingFrame.BackgroundColor3 = Color3.fromRGB(50, 50, 50)
-WaypointsScrollingFrame.BorderColor3 = Color3.fromRGB(0, 0, 0)
-WaypointsScrollingFrame.BorderSizePixel = 0
-WaypointsScrollingFrame.Position = UDim2.new(0, 0, 0.232804239, 0)
-WaypointsScrollingFrame.Size = UDim2.new(0, 292, 0, 145)
-WaypointsScrollingFrame.ScrollBarImageColor3 = Color3.fromRGB(0, 0, 0)
-WaypointsScrollingFrame.ScrollBarThickness = 0
-
-UIListLayoutWaypoints.Name = "UIListLayoutWaypoints"
-UIListLayoutWaypoints.Parent = WaypointsScrollingFrame
-UIListLayoutWaypoints.SortOrder = Enum.SortOrder.LayoutOrder
-UIListLayoutWaypoints.Padding = UDim.new(0, 4)
-
-TortureFrame.Name = "TortureFrame"
-TortureFrame.Parent = SalakitosFrame
-TortureFrame.BackgroundColor3 = Color3.fromRGB(50, 50, 50)
-TortureFrame.BorderColor3 = Color3.fromRGB(0, 0, 0)
-TortureFrame.BorderSizePixel = 0
-TortureFrame.Position = UDim2.new(0.287804872, 0, 0.100000001, 0)
-TortureFrame.Size = UDim2.new(0, 292, 0, 189)
-TortureFrame.Visible = false
-
-TortureTextBoxFrame.Name = "TortureTextBoxFrame"
-TortureTextBoxFrame.Parent = TortureFrame
-TortureTextBoxFrame.BackgroundColor3 = Color3.fromRGB(45, 45, 45)
-TortureTextBoxFrame.BorderColor3 = Color3.fromRGB(0, 0, 0)
-TortureTextBoxFrame.BorderSizePixel = 0
-TortureTextBoxFrame.Position = UDim2.new(0.0445205495, 0, 0.0476190485, 0)
-TortureTextBoxFrame.Size = UDim2.new(0, 264, 0, 26)
-
-TortureWaypointsFrame.Name = "TortureWaypointsFrame"
-TortureWaypointsFrame.Parent = TortureTextBoxFrame
-TortureWaypointsFrame.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-TortureWaypointsFrame.BackgroundTransparency = 1.000
-TortureWaypointsFrame.BorderColor3 = Color3.fromRGB(0, 0, 0)
-TortureWaypointsFrame.BorderSizePixel = 0
-TortureWaypointsFrame.Size = UDim2.new(0, 264, 0, 26)
-TortureWaypointsFrame.Font = Enum.Font.SourceSans
-TortureWaypointsFrame.PlaceholderColor3 = Color3.fromRGB(255, 255, 255)
-TortureWaypointsFrame.PlaceholderText = "SEARCH HERE"
-TortureWaypointsFrame.Text = ""
-TortureWaypointsFrame.TextColor3 = Color3.fromRGB(255, 255, 255)
-TortureWaypointsFrame.TextSize = 18.000
-
-Logo_5.Name = "Logo"
-Logo_5.Parent = TortureTextBoxFrame
-Logo_5.BackgroundTransparency = 1.000
-Logo_5.BorderSizePixel = 0
-Logo_5.Position = UDim2.new(0, 0, 0.115384616, 0)
-Logo_5.Size = UDim2.new(0, 20, 0, 20)
-Logo_5.Image = "http://www.roblox.com/asset/?id=6031154871"
-
-TortureScrollingFrame.Name = "TortureScrollingFrame"
-TortureScrollingFrame.Parent = TortureFrame
-TortureScrollingFrame.Active = true
-TortureScrollingFrame.BackgroundColor3 = Color3.fromRGB(50, 50, 50)
-TortureScrollingFrame.BorderColor3 = Color3.fromRGB(0, 0, 0)
-TortureScrollingFrame.BorderSizePixel = 0
-TortureScrollingFrame.Position = UDim2.new(0, 0, 0.232804239, 0)
-TortureScrollingFrame.Size = UDim2.new(0, 292, 0, 145)
-TortureScrollingFrame.ScrollBarImageColor3 = Color3.fromRGB(0, 0, 0)
-TortureScrollingFrame.ScrollBarThickness = 0
-
-UIListLayoutTorture.Name = "UIListLayoutTorture"
-UIListLayoutTorture.Parent = TortureScrollingFrame
-UIListLayoutTorture.SortOrder = Enum.SortOrder.LayoutOrder
-UIListLayoutTorture.Padding = UDim.new(0, 4)
-
-HouseFrame.Name = "HouseFrame"
-HouseFrame.Parent = SalakitosFrame
-HouseFrame.BackgroundColor3 = Color3.fromRGB(50, 50, 50)
-HouseFrame.BorderColor3 = Color3.fromRGB(0, 0, 0)
-HouseFrame.BorderSizePixel = 0
-HouseFrame.Position = UDim2.new(0.287804872, 0, 0.100000001, 0)
-HouseFrame.Size = UDim2.new(0, 292, 0, 189)
-HouseFrame.Visible = false
-
-HouseTextBoxFrame.Name = "HouseTextBoxFrame"
-HouseTextBoxFrame.Parent = HouseFrame
-HouseTextBoxFrame.BackgroundColor3 = Color3.fromRGB(45, 45, 45)
-HouseTextBoxFrame.BorderColor3 = Color3.fromRGB(0, 0, 0)
-HouseTextBoxFrame.BorderSizePixel = 0
-HouseTextBoxFrame.Position = UDim2.new(0.0445205495, 0, 0.0476190485, 0)
-HouseTextBoxFrame.Size = UDim2.new(0, 264, 0, 26)
-
-HouseWaypointsFrame.Name = "HouseWaypointsFrame"
-HouseWaypointsFrame.Parent = HouseTextBoxFrame
-HouseWaypointsFrame.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-HouseWaypointsFrame.BackgroundTransparency = 1.000
-HouseWaypointsFrame.BorderColor3 = Color3.fromRGB(0, 0, 0)
-HouseWaypointsFrame.BorderSizePixel = 0
-HouseWaypointsFrame.Size = UDim2.new(0, 264, 0, 26)
-HouseWaypointsFrame.Font = Enum.Font.SourceSans
-HouseWaypointsFrame.PlaceholderColor3 = Color3.fromRGB(255, 255, 255)
-HouseWaypointsFrame.PlaceholderText = "SEARCH HERE"
-HouseWaypointsFrame.Text = ""
-HouseWaypointsFrame.TextColor3 = Color3.fromRGB(255, 255, 255)
-HouseWaypointsFrame.TextSize = 18.000
-
-Logo_6.Name = "Logo"
-Logo_6.Parent = HouseTextBoxFrame
-Logo_6.BackgroundTransparency = 1.000
-Logo_6.BorderSizePixel = 0
-Logo_6.Position = UDim2.new(0, 0, 0.115384616, 0)
-Logo_6.Size = UDim2.new(0, 20, 0, 20)
-Logo_6.Image = "http://www.roblox.com/asset/?id=6031154871"
-
-HouseScrollingFrame.Name = "HouseScrollingFrame"
-HouseScrollingFrame.Parent = HouseFrame
-HouseScrollingFrame.Active = true
-HouseScrollingFrame.BackgroundColor3 = Color3.fromRGB(50, 50, 50)
-HouseScrollingFrame.BorderColor3 = Color3.fromRGB(0, 0, 0)
-HouseScrollingFrame.BorderSizePixel = 0
-HouseScrollingFrame.Position = UDim2.new(0, 0, 0.232804239, 0)
-HouseScrollingFrame.Size = UDim2.new(0, 292, 0, 145)
-HouseScrollingFrame.ScrollBarImageColor3 = Color3.fromRGB(0, 0, 0)
-HouseScrollingFrame.ScrollBarThickness = 0
-
-UIListLayoutHouse.Name = "UIListLayoutHouse"
-UIListLayoutHouse.Parent = HouseScrollingFrame
-UIListLayoutHouse.SortOrder = Enum.SortOrder.LayoutOrder
-UIListLayoutHouse.Padding = UDim.new(0, 4)
-
-OthersFrame.Name = "OthersFrame"
-OthersFrame.Parent = SalakitosFrame
-OthersFrame.BackgroundColor3 = Color3.fromRGB(50, 50, 50)
-OthersFrame.BorderColor3 = Color3.fromRGB(0, 0, 0)
-OthersFrame.BorderSizePixel = 0
-OthersFrame.Position = UDim2.new(0.287804872, 0, 0.100000001, 0)
-OthersFrame.Size = UDim2.new(0, 292, 0, 189)
-OthersFrame.Visible = false
-
-OthersTextBoxFrame.Name = "OthersTextBoxFrame"
-OthersTextBoxFrame.Parent = OthersFrame
-OthersTextBoxFrame.BackgroundColor3 = Color3.fromRGB(45, 45, 45)
-OthersTextBoxFrame.BorderColor3 = Color3.fromRGB(0, 0, 0)
-OthersTextBoxFrame.BorderSizePixel = 0
-OthersTextBoxFrame.Position = UDim2.new(0.0445205495, 0, 0.0476190485, 0)
-OthersTextBoxFrame.Size = UDim2.new(0, 264, 0, 26)
-
-OthersWaypointsFrame.Name = "OthersWaypointsFrame"
-OthersWaypointsFrame.Parent = OthersTextBoxFrame
-OthersWaypointsFrame.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-OthersWaypointsFrame.BackgroundTransparency = 1.000
-OthersWaypointsFrame.BorderColor3 = Color3.fromRGB(0, 0, 0)
-OthersWaypointsFrame.BorderSizePixel = 0
-OthersWaypointsFrame.Size = UDim2.new(0, 264, 0, 26)
-OthersWaypointsFrame.Font = Enum.Font.SourceSans
-OthersWaypointsFrame.PlaceholderColor3 = Color3.fromRGB(255, 255, 255)
-OthersWaypointsFrame.PlaceholderText = "SEARCH HERE"
-OthersWaypointsFrame.Text = ""
-OthersWaypointsFrame.TextColor3 = Color3.fromRGB(255, 255, 255)
-OthersWaypointsFrame.TextSize = 18.000
-
-Logo_7.Name = "Logo"
-Logo_7.Parent = OthersTextBoxFrame
-Logo_7.BackgroundTransparency = 1.000
-Logo_7.BorderSizePixel = 0
-Logo_7.Position = UDim2.new(0, 0, 0.115384616, 0)
-Logo_7.Size = UDim2.new(0, 20, 0, 20)
-Logo_7.Image = "http://www.roblox.com/asset/?id=6031154871"
-
-OthersScrollingFrame.Name = "OthersScrollingFrame"
-OthersScrollingFrame.Parent = OthersFrame
-OthersScrollingFrame.Active = true
-OthersScrollingFrame.BackgroundColor3 = Color3.fromRGB(50, 50, 50)
-OthersScrollingFrame.BorderColor3 = Color3.fromRGB(0, 0, 0)
-OthersScrollingFrame.BorderSizePixel = 0
-OthersScrollingFrame.Position = UDim2.new(0, 0, 0.232804239, 0)
-OthersScrollingFrame.Size = UDim2.new(0, 292, 0, 145)
-OthersScrollingFrame.ScrollBarImageColor3 = Color3.fromRGB(0, 0, 0)
-OthersScrollingFrame.ScrollBarThickness = 0
-
-UIListLayoutOthers.Name = "UIListLayoutOthers"
-UIListLayoutOthers.Parent = OthersScrollingFrame
-UIListLayoutOthers.SortOrder = Enum.SortOrder.LayoutOrder
-UIListLayoutOthers.Padding = UDim.new(0, 4)
-
-local plr = game:GetService("Players").LocalPlayer
-local UserInputService = game:GetService("UserInputService")
-local TweenService = game:GetService("TweenService")
-local RunService = game:GetService("RunService")
-local LocalPlayer = game:GetService("Players").LocalPlayer
-local Mouse = LocalPlayer:GetMouse()
-local PresetColor = Color3.fromRGB(44, 120, 224)
-
---[[
- _   _                       ______                _   _                 
-| | | |                      |  ___|              | | (_)                
-| |_| | ___  _ __ ___   ___  | |_ _   _ _ __   ___| |_ _  ___  _ __  ___ 
-|  _  |/ _ \| '_ ` _ \ / _ \ |  _| | | | '_ \ / __| __| |/ _ \| '_ \/ __|
-| | | | (_) | | | | | |  __/ | | | |_| | | | | (__| |_| | (_) | | | \__ \
-\_| |_/\___/|_| |_| |_|\___| \_|  \__,_|_| |_|\___|\__|_|\___/|_| |_|___/
-                                                                         
-                                                                         
-	--]]
-WelcomeTextLabel.Text = "Welcome To SalakitosHub "..plr.DisplayName.."!"
---AutoBusFrame
-local AutoBusCredits = game.Players:GetUserThumbnailAsync(4082972907, Enum.ThumbnailType.HeadShot, Enum.ThumbnailSize.Size60x60)
-AutoBusCreditsImage.Image = AutoBusCredits
---Aizakku Frame Image
-local IsaacImage = game.Players:GetUserThumbnailAsync(3778231239, Enum.ThumbnailType.HeadShot, Enum.ThumbnailSize.Size60x60)
-AizakkuImageLabel.Image = IsaacImage
---Local Player Image
-local PlrLocal = game.Players:GetUserThumbnailAsync(plr.UserId, Enum.ThumbnailType.HeadShot, Enum.ThumbnailSize.Size60x60)
-WelcomeImageLabel.Image = PlrLocal
---[[
- _   _ _____  ______                _   _                 
-| | | |_   _| |  ___|              | | (_)                
-| | | | | |   | |_ _   _ _ __   ___| |_ _  ___  _ __  ___ 
-| | | | | |   |  _| | | | '_ \ / __| __| |/ _ \| '_ \/ __|
-| |_| |_| |_  | | | |_| | | | | (__| |_| | (_) | | | \__ \
- \___/ \___/  \_|  \__,_|_| |_|\___|\__|_|\___/|_| |_|___/
-                                                          
-                                                                                                                        
-	--]]
---Funcion Del Frame
-game:GetService("UserInputService").InputBegan:Connect(function(input,chatting)
-	if input.UserInputType == Enum.UserInputType.Keyboard then
-		if chatting then
-			return
-		end
-		if input.KeyCode == Enum.KeyCode.P then
-			ScreenGuiSalakitos.Enabled = not ScreenGuiSalakitos.Enabled
-		end
-	end
-end)
---Funcion para que se pueda
-function dragify(Frame)
-	local UIS = game:GetService("UserInputService")
-	dragToggle = nil
-	local dragSpeed = 0
-	dragInput = nil
-	dragStart = nil
-	local dragPos = nil
-	function updateInput(input)
-		local Delta = input.Position - dragStart
-		local Position = UDim2.new(startPos.X.Scale, startPos.X.Offset + Delta.X, startPos.Y.Scale, startPos.Y.Offset + Delta.Y)
-		game:GetService("TweenService"):Create(SalakitosFrame, TweenInfo.new(0.3), {Position = Position}):Play()
-	end
-	SalakitosFrame.InputBegan:Connect(function(input)
-		if (input.UserInputType == Enum.UserInputType.MouseButton1 or input.UserInputType == Enum.UserInputType.Touch) and UIS:GetFocusedTextBox() == nil then
-			dragToggle = true
-			dragStart = input.Position
-			startPos = Frame.Position
-			input.Changed:Connect(function()
-				if input.UserInputState == Enum.UserInputState.End then
-					dragToggle = false
-				end
-			end)
-		end
-	end)
-	SalakitosFrame.InputChanged:Connect(function(input)
-		if input.UserInputType == Enum.UserInputType.MouseMovement or input.UserInputType == Enum.UserInputType.Touch then
-			dragInput = input
-		end
-	end)
-	game:GetService("UserInputService").InputChanged:Connect(function(input)
-		if input == dragInput and dragToggle then
-			updateInput(input)
-		end
-	end)
+if not isfile("NissanGTR35") then
+	writefile("NissanGTR35", http.request({Url = "https://raw.githubusercontent.com/rogelioajax/Themes/main/NissanGTR35.mp4", Method = "GET"}).Body)
 end
-dragify(SalakitosFrame)
+local MainFrameVideoBackground = getsynasset("NissanGTR35")
 
---[[
- _____ _     _     ______           ______       _   _                  
-/  ___(_)   | |    | ___ \          | ___ \     | | | |                 
-\ `--. _  __| | ___| |_/ / __ _ _ __| |_/ /_   _| |_| |_ ___  _ __  ___ 
- `--. \ |/ _` |/ _ \ ___ \/ _` | '__| ___ \ | | | __| __/ _ \| '_ \/ __|
-/\__/ / | (_| |  __/ |_/ / (_| | |  | |_/ / |_| | |_| || (_) | | | \__ \
-\____/|_|\__,_|\___\____/ \__,_|_|  \____/ \__,_|\__|\__\___/|_| |_|___/
-                                                                                                                                              
---]]
-function addSideButton(Tab, text, callback)
-	local Button = Instance.new("TextButton")
-	local ButtonCorner = Instance.new("UICorner")
+FrameTodo.Name = "FrameTodo"
+FrameTodo.Parent = ScreenGuiSalakitos
+FrameTodo.BackgroundColor3 = Color3.fromRGB(45, 45, 45)
+FrameTodo.BorderColor3 = Color3.fromRGB(0, 0, 0)
+FrameTodo.BorderSizePixel = 0
+FrameTodo.Position = UDim2.new(0.314889342, 0, 0.232829645, 0)
+FrameTodo.Size = UDim2.new(0, 457, 0, 233)
+FrameTodo.Volume = 0
+FrameTodo.Video = MainFrameVideoBackground
 
-	Button.Name = "Button"
-	Button.Parent = Tab
-	Button.BackgroundColor3 = Color3.fromRGB(14, 14, 14)
-	Button.Size = UDim2.new(0, 118, 0, 40)
-	Button.AutoButtonColor = false
-	Button.Font = Enum.Font.GothamBold
-	Button.Text = text
-	Button.TextColor3 = Color3.fromRGB(255, 0, 4)
-	Button.TextSize = 16.000
-	Button.TextXAlignment = Enum.TextXAlignment.Center
-	Button.BackgroundTransparency = 0.950
+TextLabelTitulo.Name = "TextLabelTitulo"
+TextLabelTitulo.Parent = FrameTodo
+TextLabelTitulo.BackgroundColor3 = Color3.fromRGB(35, 35, 35)
+TextLabelTitulo.BorderColor3 = Color3.fromRGB(0, 0, 0)
+TextLabelTitulo.BorderSizePixel = 0
+TextLabelTitulo.Size = UDim2.new(0, 155, 0, 41)
+TextLabelTitulo.Font = Enum.Font.SourceSansBold
+TextLabelTitulo.Text = "SalaKitosHUB"
+TextLabelTitulo.TextColor3 = Color3.fromRGB(255, 0, 0)
+TextLabelTitulo.TextSize = 20.000
 
-	ButtonCorner.CornerRadius = UDim.new(0, 0)
-	ButtonCorner.Name = "ButtonCorner"
-	ButtonCorner.Parent = Button
+ScrollingFrameBotones.Name = "ScrollingFrameBotones"
+ScrollingFrameBotones.Parent = FrameTodo
+ScrollingFrameBotones.Active = true
+ScrollingFrameBotones.BackgroundColor3 = Color3.fromRGB(35, 35, 35)
+ScrollingFrameBotones.BorderColor3 = Color3.fromRGB(0, 0, 0)
+ScrollingFrameBotones.BorderSizePixel = 0
+ScrollingFrameBotones.Position = UDim2.new(0, 0, 0.14592275, 0)
+ScrollingFrameBotones.Size = UDim2.new(0, 155, 0, 199)
+ScrollingFrameBotones.CanvasPosition = Vector2.new(0, 4.68341732)
+ScrollingFrameBotones.ScrollBarImageColor3 = Color3.fromRGB(0, 0, 0)
+ScrollingFrameBotones.ScrollBarThickness = 5
 
-	Button.MouseEnter:Connect(
-		function()
-			TweenService:Create(
-				Button,
-				TweenInfo.new(.3, Enum.EasingStyle.Quad, Enum.EasingDirection.Out),
-				{BackgroundColor3 = Color3.fromRGB(17, 17, 17)}
-			):Play()
-		end
-	)
+UIListLayout.Parent = ScrollingFrameBotones
+UIListLayout.SortOrder = Enum.SortOrder.LayoutOrder
 
-	Button.MouseLeave:Connect(
-		function()
-			TweenService:Create(
-				Button,
-				TweenInfo.new(.2, Enum.EasingStyle.Quad, Enum.EasingDirection.Out),
-				{BackgroundColor3 = Color3.fromRGB(14, 14, 14)}
-			):Play()
-		end
-	)
+TextButtonEliminar.Name = "TextButtonEliminar"
+TextButtonEliminar.Parent = FrameTodo
+TextButtonEliminar.BackgroundColor3 = Color3.fromRGB(35, 35, 35)
+TextButtonEliminar.BorderColor3 = Color3.fromRGB(0, 0, 0)
+TextButtonEliminar.BorderSizePixel = 0
+TextButtonEliminar.Position = UDim2.new(0.927789927, 0, 0, 0)
+TextButtonEliminar.Size = UDim2.new(0, 33, 0, 40)
+TextButtonEliminar.Font = Enum.Font.SourceSansBold
+TextButtonEliminar.Text = "X"
+TextButtonEliminar.TextColor3 = Color3.fromRGB(255, 0, 0)
+TextButtonEliminar.TextSize = 1.000
 
-	Button.MouseButton1Click:Connect(
-		function()
-			pcall(callback)
-		end
-	)
+Selectedclose.Name = "Selected: close"
+Selectedclose.Parent = TextButtonEliminar
+Selectedclose.BackgroundColor3 = Color3.fromRGB(255, 0, 0)
+Selectedclose.BackgroundTransparency = 1.000
+Selectedclose.Position = UDim2.new(0.0909090936, 0, 0.160605997, 0)
+Selectedclose.Size = UDim2.new(0, 27, 0, 27)
+Selectedclose.Image = "rbxassetid://2777727756"
+Selectedclose.ImageColor3 = Color3.fromRGB(255, 0, 0)
 
-	Tab.CanvasSize = UDim2.new(0, 0, 0, UILIstLayoutSide.AbsoluteContentSize.Y)
-end
-function GetFramesVisible()
-	HouseFrame.Visible = false
-	ObjetsFrame.Visible = false
-	OthersFrame.Visible = false
-	PlayerFrame.Visible = false
-	TortureFrame.Visible = false
-	VehicleFrame.Visible = false
-	WaypointsFrame.Visible = false
-	WelcomeFrame.Visible = false
-end
-addSideButton(ScrollingFrameSide, "Home", function()
-	GetFramesVisible()
-	WelcomeFrame.Visible = true
-end)
-addSideButton(ScrollingFrameSide, "Player", function()
-	GetFramesVisible()
-	PlayerFrame.Visible = true
-end)
-addSideButton(ScrollingFrameSide, "Vehicle", function()
-	GetFramesVisible()
-	VehicleFrame.Visible = true
-end)
-addSideButton(ScrollingFrameSide, "Objects", function()
-	GetFramesVisible()
-	ObjetsFrame.Visible = true
-end)
-addSideButton(ScrollingFrameSide, "Waypoints", function()
-	GetFramesVisible()
-	WaypointsFrame.Visible = true
-end)
-addSideButton(ScrollingFrameSide, "Torture", function()
-	GetFramesVisible()
-	TortureFrame.Visible = true
-end)
-addSideButton(ScrollingFrameSide, "House", function()
-	GetFramesVisible()
-	HouseFrame.Visible = true
-end)
-addSideButton(ScrollingFrameSide, "Others", function()
-	GetFramesVisible()
-	OthersFrame.Visible = true
-end)
---[[
-______ _                        ______                _   _                  ______       _   _                _____                 _        _____         _  ______            ______                ______                    
-| ___ \ |                       |  ___|              | | (_)                 | ___ \     | | | |              |_   _|               | |      |_   _|       | | | ___ \           |  _  \               |  _  \                   
-| |_/ / | __ _ _   _  ___ _ __  | |_ _   _ _ __   ___| |_ _  ___  _ __  ___  | |_/ /_   _| |_| |_ ___  _ __     | | ___   __ _  __ _| | ___    | | _____  _| |_| |_/ / _____  __ | | | |_ __ ___  _ __ | | | |_____      ___ __  
-|  __/| |/ _` | | | |/ _ \ '__| |  _| | | | '_ \ / __| __| |/ _ \| '_ \/ __| | ___ \ | | | __| __/ _ \| '_ \    | |/ _ \ / _` |/ _` | |/ _ \   | |/ _ \ \/ / __| ___ \/ _ \ \/ / | | | | '__/ _ \| '_ \| | | / _ \ \ /\ / / '_ \ 
-| |   | | (_| | |_| |  __/ |    | | | |_| | | | | (__| |_| | (_) | | | \__ \ | |_/ / |_| | |_| || (_) | | | |   | | (_) | (_| | (_| | |  __/   | |  __/>  <| |_| |_/ / (_) >  <  | |/ /| | | (_) | |_) | |/ / (_) \ V  V /| | | |
-\_|   |_|\__,_|\__, |\___|_|    \_|  \__,_|_| |_|\___|\__|_|\___/|_| |_|___/ \____/ \__,_|\__|\__\___/|_| |_|   \_/\___/ \__, |\__, |_|\___|   \_/\___/_/\_\\__\____/ \___/_/\_\ |___/ |_|  \___/| .__/|___/ \___/ \_/\_/ |_| |_|
-                __/ |                                                                                                     __/ | __/ |                                                            | |                             
-               |___/                                                                                                     |___/ |___/                                                             |_|                             
---]]
-function addPlayerLabel(Tab, text)
-	local Label = Instance.new("TextButton")
-	local LabelCorner = Instance.new("UICorner")
-	local LabelTitle = Instance.new("TextLabel")
+TextButtonOpciones.Name = "TextButtonOpciones"
+TextButtonOpciones.Parent = FrameTodo
+TextButtonOpciones.BackgroundColor3 = Color3.fromRGB(35, 35, 35)
+TextButtonOpciones.BorderColor3 = Color3.fromRGB(0, 0, 0)
+TextButtonOpciones.BorderSizePixel = 0
+TextButtonOpciones.Position = UDim2.new(0.844638944, 0, 0, 0)
+TextButtonOpciones.Size = UDim2.new(0, 38, 0, 41)
+TextButtonOpciones.Font = Enum.Font.SourceSansBold
+TextButtonOpciones.Text = ""
+TextButtonOpciones.TextColor3 = Color3.fromRGB(255, 0, 0)
+TextButtonOpciones.TextSize = 20.000
 
-	Label.Name = "Button"
-	Label.Parent = Tab
-	Label.BackgroundColor3 = Color3.fromRGB(45, 45, 45)
-	Label.Size = UDim2.new(0, 292, 0, 26)
-	Label.AutoButtonColor = false
-	Label.Font = Enum.Font.Gotham
-	Label.Text = "	"..text
-	Label.TextColor3 = Color3.fromRGB(255, 0, 4)
-	Label.TextSize = 16.000
+Selectedsettings.Name = "Selected: settings"
+Selectedsettings.Parent = TextButtonOpciones
+Selectedsettings.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Selectedsettings.BackgroundTransparency = 1.000
+Selectedsettings.Position = UDim2.new(0.147528395, 0, 0.206208199, 0)
+Selectedsettings.Size = UDim2.new(0, 25, 0, 24)
+Selectedsettings.Image = "rbxassetid://2790678226"
+Selectedsettings.ImageColor3 = Color3.fromRGB(255, 0, 0)
 
-	LabelCorner.CornerRadius = UDim.new(0, 5)
-	LabelCorner.Name = "ButtonCorner"
-	LabelCorner.Parent = Label
+ScrollingFrameJugador.Name = "ScrollingFrameJugador"
+ScrollingFrameJugador.Parent = FrameTodo
+ScrollingFrameJugador.Active = true
+ScrollingFrameJugador.BackgroundColor3 = Color3.fromRGB(45, 45, 45)
+ScrollingFrameJugador.BorderColor3 = Color3.fromRGB(0, 0, 0)
+ScrollingFrameJugador.BorderSizePixel = 0
+ScrollingFrameJugador.Position = UDim2.new(0.339168489, 0, 0.175965667, 0)
+ScrollingFrameJugador.Size = UDim2.new(0, 302, 0, 191)
+ScrollingFrameJugador.Visible = false
+ScrollingFrameJugador.ScrollBarImageColor3 = Color3.fromRGB(0, 0, 0)
+ScrollingFrameJugador.ScrollBarThickness = 5
 
+UIListLayout_2.Parent = ScrollingFrameJugador
+UIListLayout_2.SortOrder = Enum.SortOrder.LayoutOrder
 
-	Tab.CanvasSize = UDim2.new(0, 0, 0, UIListLayoutPlayer.AbsoluteContentSize.Y)
-end
-function addPlayerButton(Tab, text, callback)
-	local Button = Instance.new("TextButton")
-	local ButtonCorner = Instance.new("UICorner")
+ScrollingFrameLugares.Name = "ScrollingFrameLugares"
+ScrollingFrameLugares.Parent = FrameTodo
+ScrollingFrameLugares.Active = true
+ScrollingFrameLugares.BackgroundColor3 = Color3.fromRGB(45, 45, 45)
+ScrollingFrameLugares.BorderColor3 = Color3.fromRGB(0, 0, 0)
+ScrollingFrameLugares.BorderSizePixel = 0
+ScrollingFrameLugares.Position = UDim2.new(0.339168489, 0, 0.175965667, 0)
+ScrollingFrameLugares.Size = UDim2.new(0, 302, 0, 191)
+ScrollingFrameLugares.Visible = false
+ScrollingFrameLugares.ScrollBarImageColor3 = Color3.fromRGB(0, 0, 0)
+ScrollingFrameLugares.ScrollBarThickness = 5
 
-	Button.Name = "Button"
-	Button.Parent = Tab
-	Button.BackgroundColor3 = Color3.fromRGB(14, 14, 14)
-	Button.Size = UDim2.new(0, 292, 0, 26)
-	Button.AutoButtonColor = false
-	Button.Font = Enum.Font.GothamBold
-	Button.Text = text
-	Button.TextColor3 = Color3.fromRGB(255, 255, 255)
-	Button.TextSize = 16.000
-	Button.TextXAlignment = Enum.TextXAlignment.Center
-	Button.BackgroundTransparency = 0.950
+UIListLayout_3.Parent = ScrollingFrameLugares
+UIListLayout_3.SortOrder = Enum.SortOrder.LayoutOrder
 
-	ButtonCorner.CornerRadius = UDim.new(0, 0)
-	ButtonCorner.Name = "ButtonCorner"
-	ButtonCorner.Parent = Button
+ScrollingFrameOtros.Name = "ScrollingFrameOtros"
+ScrollingFrameOtros.Parent = FrameTodo
+ScrollingFrameOtros.Active = true
+ScrollingFrameOtros.BackgroundColor3 = Color3.fromRGB(45, 45, 45)
+ScrollingFrameOtros.BorderColor3 = Color3.fromRGB(0, 0, 0)
+ScrollingFrameOtros.BorderSizePixel = 0
+ScrollingFrameOtros.Position = UDim2.new(0.339168489, 0, 0.175965667, 0)
+ScrollingFrameOtros.Size = UDim2.new(0, 302, 0, 191)
+ScrollingFrameOtros.Visible = false
+ScrollingFrameOtros.ScrollBarImageColor3 = Color3.fromRGB(0, 0, 0)
+ScrollingFrameOtros.ScrollBarThickness = 5
 
-	Button.MouseEnter:Connect(
-		function()
-			TweenService:Create(
-				Button,
-				TweenInfo.new(.3, Enum.EasingStyle.Quad, Enum.EasingDirection.Out),
-				{BackgroundColor3 = Color3.fromRGB(17, 17, 17)}
-			):Play()
-		end
-	)
+UIListLayout_4.Parent = ScrollingFrameOtros
+UIListLayout_4.SortOrder = Enum.SortOrder.LayoutOrder
 
-	Button.MouseLeave:Connect(
-		function()
-			TweenService:Create(
-				Button,
-				TweenInfo.new(.2, Enum.EasingStyle.Quad, Enum.EasingDirection.Out),
-				{BackgroundColor3 = Color3.fromRGB(14, 14, 14)}
-			):Play()
-		end
-	)
+ScrollingFrameObjetos.Name = "ScrollingFrameObjetos"
+ScrollingFrameObjetos.Parent = FrameTodo
+ScrollingFrameObjetos.Active = true
+ScrollingFrameObjetos.BackgroundColor3 = Color3.fromRGB(45, 45, 45)
+ScrollingFrameObjetos.BorderColor3 = Color3.fromRGB(0, 0, 0)
+ScrollingFrameObjetos.BorderSizePixel = 0
+ScrollingFrameObjetos.Position = UDim2.new(0.339168489, 0, 0.175965667, 0)
+ScrollingFrameObjetos.Size = UDim2.new(0, 302, 0, 191)
+ScrollingFrameObjetos.Visible = false
+ScrollingFrameObjetos.ScrollBarImageColor3 = Color3.fromRGB(0, 0, 0)
+ScrollingFrameObjetos.ScrollBarThickness = 5
 
-	Button.MouseButton1Click:Connect(
-		function()
-			pcall(callback)
-		end
-	)
+UIListLayout_5.Parent = ScrollingFrameObjetos
+UIListLayout_5.SortOrder = Enum.SortOrder.LayoutOrder
 
-	Tab.CanvasSize = UDim2.new(0, 0, 0, UIListLayoutPlayer.AbsoluteContentSize.Y)
-end
-addPlayerLabel(PlayerScrollingFrame, "Appearance")
-addPlayerButton(PlayerScrollingFrame, "Refresh", function()
-	local args = {
-		[1] = "OCA"
-	}
+ScrollingFrameKill.Name = "ScrollingFrameKill"
+ScrollingFrameKill.Parent = FrameTodo
+ScrollingFrameKill.Active = true
+ScrollingFrameKill.BackgroundColor3 = Color3.fromRGB(45, 45, 45)
+ScrollingFrameKill.BorderColor3 = Color3.fromRGB(0, 0, 0)
+ScrollingFrameKill.BorderSizePixel = 0
+ScrollingFrameKill.Position = UDim2.new(0.339168489, 0, 0.175965667, 0)
+ScrollingFrameKill.Size = UDim2.new(0, 302, 0, 191)
+ScrollingFrameKill.Visible = false
+ScrollingFrameKill.ScrollBarImageColor3 = Color3.fromRGB(0, 0, 0)
+ScrollingFrameKill.ScrollBarThickness = 5
 
-	game:GetService("ReplicatedStorage"):WaitForChild("RE"):WaitForChild("1Avata1rOrigina1l"):FireServer(unpack(args))
+UIListLayout_6.Parent = ScrollingFrameKill
+UIListLayout_6.SortOrder = Enum.SortOrder.LayoutOrder
 
-end)
+ScrollingFrameCasas.Name = "ScrollingFrameCasas"
+ScrollingFrameCasas.Parent = FrameTodo
+ScrollingFrameCasas.Active = true
+ScrollingFrameCasas.BackgroundColor3 = Color3.fromRGB(45, 45, 45)
+ScrollingFrameCasas.BorderColor3 = Color3.fromRGB(0, 0, 0)
+ScrollingFrameCasas.BorderSizePixel = 0
+ScrollingFrameCasas.Position = UDim2.new(0.339168489, 0, 0.175965667, 0)
+ScrollingFrameCasas.Size = UDim2.new(0, 302, 0, 191)
+ScrollingFrameCasas.Visible = false
+ScrollingFrameCasas.ScrollBarImageColor3 = Color3.fromRGB(0, 0, 0)
+ScrollingFrameCasas.ScrollBarThickness = 5
 
-addPlayerLabel(PlayerScrollingFrame, "Body parts")
+UIListLayout_7.Parent = ScrollingFrameCasas
+UIListLayout_7.SortOrder = Enum.SortOrder.LayoutOrder
 
-addPlayerButton(PlayerScrollingFrame, "FE Korblox", function()
-	local args = {
-		[1] = "CharacterChange",
-		[2] = {
-			[1] = 1,
-			[2] = 1,
-			[3] = 1,
-			[4] = 139607718,
-			[5] = 1,
-			[6] = 1
-		},
-		[3] = "AllBlocky"
-	}
+ScrollingFrameAjustes.Name = "ScrollingFrameAjustes"
+ScrollingFrameAjustes.Parent = FrameTodo
+ScrollingFrameAjustes.Active = true
+ScrollingFrameAjustes.BackgroundColor3 = Color3.fromRGB(45, 45, 45)
+ScrollingFrameAjustes.BorderColor3 = Color3.fromRGB(0, 0, 0)
+ScrollingFrameAjustes.BorderSizePixel = 0
+ScrollingFrameAjustes.Position = UDim2.new(0.339168489, 0, 0.175965667, 0)
+ScrollingFrameAjustes.Size = UDim2.new(0, 302, 0, 191)
+ScrollingFrameAjustes.Visible = false
+ScrollingFrameAjustes.ScrollBarImageColor3 = Color3.fromRGB(0, 0, 0)
+ScrollingFrameAjustes.ScrollBarThickness = 5
 
-	game:GetService("ReplicatedStorage"):WaitForChild("RE"):WaitForChild("1Avata1rOrigina1l"):FireServer(unpack(args))
+UIListLayout_8.Parent = ScrollingFrameAjustes
+UIListLayout_8.SortOrder = Enum.SortOrder.LayoutOrder
 
-end)
+ScrollingFrameCreditos.Name = "ScrollingFrameCreditos"
+ScrollingFrameCreditos.Parent = FrameTodo
+ScrollingFrameCreditos.Active = true
+ScrollingFrameCreditos.BackgroundColor3 = Color3.fromRGB(45, 45, 45)
+ScrollingFrameCreditos.BorderColor3 = Color3.fromRGB(0, 0, 0)
+ScrollingFrameCreditos.BorderSizePixel = 0
+ScrollingFrameCreditos.Position = UDim2.new(0.339168489, 0, 0.175965667, 0)
+ScrollingFrameCreditos.Size = UDim2.new(0, 302, 0, 191)
+ScrollingFrameCreditos.Visible = false
+ScrollingFrameCreditos.ScrollBarImageColor3 = Color3.fromRGB(0, 0, 0)
+ScrollingFrameCreditos.ScrollBarThickness = 5
 
-addPlayerButton(PlayerScrollingFrame, "FE Headles", function()
-	local args = {
-		[1] = "CharacterChange",
-		[2] = {
-			[1] = 1,
-			[2] = 1,
-			[3] = 1,
-			[4] = 1,
-			[5] = 1,
-			[6] = 134082579
-		},
-		[3] = "AllBlocky"
-	}
+UIListLayout_9.Parent = ScrollingFrameCreditos
+UIListLayout_9.SortOrder = Enum.SortOrder.LayoutOrder
 
-	game:GetService("ReplicatedStorage"):WaitForChild("RE"):WaitForChild("1Avata1rOrigina1l"):FireServer(unpack(args))
+FrameMenu.Name = "FrameMenu"
+FrameMenu.Parent = FrameTodo
+FrameMenu.BackgroundColor3 = Color3.fromRGB(45, 45, 45)
+FrameMenu.BorderColor3 = Color3.fromRGB(0, 0, 0)
+FrameMenu.BorderSizePixel = 0
+FrameMenu.Position = UDim2.new(0.339168489, 0, 0.171673819, 0)
+FrameMenu.Size = UDim2.new(0, 299, 0, 193)
 
-end)
+TextLabelWelcome.Name = "TextLabelWelcome"
+TextLabelWelcome.Parent = FrameMenu
+TextLabelWelcome.BackgroundColor3 = Color3.fromRGB(38, 38, 38)
+TextLabelWelcome.BorderColor3 = Color3.fromRGB(0, 0, 0)
+TextLabelWelcome.BorderSizePixel = 0
+TextLabelWelcome.Position = UDim2.new(0.140468225, 0, 0.694300532, 0)
+TextLabelWelcome.Size = UDim2.new(0, 218, 0, 50)
+TextLabelWelcome.Font = Enum.Font.SourceSans
+TextLabelWelcome.Text = "Welcome,"
+TextLabelWelcome.TextColor3 = Color3.fromRGB(255, 0, 0)
+TextLabelWelcome.TextSize = 20.000
 
+FrameAdorno.Name = "FrameAdorno"
+FrameAdorno.Parent = FrameMenu
+FrameAdorno.BackgroundColor3 = Color3.fromRGB(38, 38, 38)
+FrameAdorno.BorderColor3 = Color3.fromRGB(0, 0, 0)
+FrameAdorno.BorderSizePixel = 0
+FrameAdorno.Position = UDim2.new(0.28093645, 0, 0.0362694301, 0)
+FrameAdorno.Size = UDim2.new(0, 131, 0, 119)
 
-addPlayerLabel(PlayerScrollingFrame, "Whole body")
+ImageLabelPJ.Name = "ImageLabelPJ"
+ImageLabelPJ.Parent = FrameMenu
+ImageLabelPJ.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+ImageLabelPJ.BorderColor3 = Color3.fromRGB(0, 0, 0)
+ImageLabelPJ.BorderSizePixel = 0
+ImageLabelPJ.Position = UDim2.new(0.337792635, 0, 0.0725388601, 0)
+ImageLabelPJ.Size = UDim2.new(0, 100, 0, 100)
+ImageLabelPJ.Image = "rbxasset://textures/ui/GuiImagePlaceholder.png"
 
-addPlayerButton(PlayerScrollingFrame, "FE Naked", function()
-	local args = {
-		[1] = "wear",
-		[2] = 7002762147
-	}
+FrameSoporte.Name = "FrameSoporte"
+FrameSoporte.Parent = FrameTodo
+FrameSoporte.BackgroundColor3 = Color3.fromRGB(35, 35, 35)
+FrameSoporte.BorderColor3 = Color3.fromRGB(0, 0, 0)
+FrameSoporte.BorderSizePixel = 0
+FrameSoporte.Position = UDim2.new(0.304157555, 0, 0, 0)
+FrameSoporte.Size = UDim2.new(0, 247, 0, 40)
 
-	game:GetService("ReplicatedStorage"):WaitForChild("RE"):WaitForChild("1Updat1eAvata1r"):FireServer(unpack(args))
-
-	wait(1)
-	local args = {
-		[1] = "wear",
-		[2] = 2485613084
-	}
-
-	game:GetService("ReplicatedStorage"):WaitForChild("RE"):WaitForChild("1Updat1eAvata1r"):FireServer(unpack(args))
-
-	wait(1)
-
-
-	local args = {
-		[1] = "wear",
-		[2] = 7002762147
-	}
-
-	game:GetService("ReplicatedStorage"):WaitForChild("RE"):WaitForChild("1Updat1eAvata1r"):FireServer(unpack(args))
-	wait(1)
-
-	local args = {
-		[1] = "wear",
-		[2] = 2485613084
-	}
-
-	game:GetService("ReplicatedStorage"):WaitForChild("RE"):WaitForChild("1Updat1eAvata1r"):FireServer(unpack(args))
-
-
-end)
-
-addPlayerButton(PlayerScrollingFrame, "FE Faceless", function()
-	local args = {
-		[1] = "wear",
-		[2] = 12357110191
-	}
-
-	game:GetService("ReplicatedStorage"):WaitForChild("RE"):WaitForChild("1Updat1eAvata1r"):FireServer(unpack(args))
-
-
-	wait(1)
-	local args = {
-		[1] = "wear",
-		[2] = 12357110191
-	}
-
-	game:GetService("ReplicatedStorage"):WaitForChild("RE"):WaitForChild("1Updat1eAvata1r"):FireServer(unpack(args))
-
-	wait(1)
-	local args = {
-		[1] = "wear",
-		[2] = 12357110191
-	}
-
-	game:GetService("ReplicatedStorage"):WaitForChild("RE"):WaitForChild("1Updat1eAvata1r"):FireServer(unpack(args))
-	wait(1)
-
-end)
-addPlayerLabel(PlayerScrollingFrame, "Invisible/Visible")
-
-addPlayerButton(PlayerScrollingFrame, "FE Invisible", function()
-	local args = {
-		[1] = "CharacterSizeDown",
-		[2] = 5
-	}
-
-	game:GetService("ReplicatedStorage"):WaitForChild("RE"):WaitForChild("1Clothe1s"):FireServer(unpack(args))
-
-end)
-
-addPlayerButton(PlayerScrollingFrame, "Visible", function()
-	local args = {
-		[1] = "CharacterSizeUp",
-		[2] = 1
-	}
-
-	game:GetService("ReplicatedStorage"):WaitForChild("RE"):WaitForChild("1Clothe1s"):FireServer(unpack(args))
-
-end)
+TextButtonAB.Name = "TextButtonAB"
+TextButtonAB.Parent = ScreenGuiSalakitos
+TextButtonAB.BackgroundColor3 = Color3.fromRGB(45, 45, 45)
+TextButtonAB.BorderColor3 = Color3.fromRGB(0, 0, 0)
+TextButtonAB.BorderSizePixel = 0
+TextButtonAB.Position = UDim2.new(0.714285731, 0, 0, 0)
+TextButtonAB.Size = UDim2.new(0, 57, 0, 40)
+TextButtonAB.Font = Enum.Font.SourceSansBold
+TextButtonAB.Text = "SKHub"
+TextButtonAB.TextColor3 = Color3.fromRGB(255, 0, 0)
+TextButtonAB.TextSize = 20.000
