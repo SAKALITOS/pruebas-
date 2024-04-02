@@ -48,7 +48,7 @@ fireclickdetector(Workspace.WorkspaceCom["001_GiveTools"].FireX.ClickDetector)
 wait()
 
   i = i + 1
-until i > textbox.text
+until i > 100
 
 
 
