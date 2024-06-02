@@ -1,0 +1,2602 @@
+
+
+--firex line gun mod
+
+
+-- Definimos una variable global para almacenar las casillas ya seleccionadas
+if _G.selectedSlots == nil then
+    _G.selectedSlots = {}
+end
+
+-- Obtenemos el jugador local
+local player = game.Players.LocalPlayer
+
+-- Obtenemos la mochila del jugador
+local backpack = player.Backpack
+
+-- Obtenemos todas las herramientas en la mochila
+local tools = backpack:GetChildren()
+
+-- Filtramos las herramientas que aún no se han seleccionado
+local availableSlots = {}
+for _, tool in ipairs(tools) do
+    local selected = false
+    for _, slot in ipairs(_G.selectedSlots) do
+        if tool == slot then
+            selected = true
+            break
+        end
+    end
+    if not selected then
+        table.insert(availableSlots, tool)
+    end
+end
+
+-- Si hay herramientas disponibles para seleccionar, seleccionamos una aleatoria
+if #availableSlots > 0 then
+    local selectedSlot = availableSlots[math.random(1, #availableSlots)]
+    player.Character.Humanoid:EquipTool(selectedSlot)
+    table.insert(_G.selectedSlots, selectedSlot)
+else
+    -- Si ya se han seleccionado todas las casillas, reiniciamos la lista
+    _G.selectedSlots = {}
+end
+
+
+--Brookhaven Change FireX position "equip the tools again if u run the script while holding the tools to make it fe"
+--By M1zz
+--FE
+
+-- Get the workspace
+local workspace = game:GetService("Workspace")
+
+-- Find your character
+local character = game.Players.LocalPlayer.Character
+
+-- Check if character exists
+if character then
+    -- Find the "FireX" part in the character
+    local fireX = character:FindFirstChild("FireX")
+
+    -- Check if "FireX" part exists
+    if fireX then
+        -- Change the GripPos of "FireX"
+        fireX.GripUp = Vector3.new(0, 10, -1000) -- Change the Vector3 values to your desired position (Left/right,Up/Down,Front/Back)
+    else
+        print("Could not find 'FireX' part in character.")
+    end
+else
+    print("Could not find your character.")
+end
+
+
+-- Get the workspace
+local workspace = game:GetService("Workspace")
+
+-- Find your character
+local character = game.Players.LocalPlayer.Character
+
+-- Check if character exists
+if character then
+    -- Find the "FireX" part in the character
+    local FireX = character:FindFirstChild("FireX")
+
+    -- Check if "FireX" part exists
+    if FireX then
+        -- Change the GripPos of "FireX"
+        FireX.GripPos = Vector3.new(0, 3, -25) -- Change the Vector3 values to your desired position (Left/right,Up/Down,Front/Back)
+    else
+        print("Could not find 'FireX' part in character.")
+    end
+else
+    print("Could not find your character.")
+end
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+if _G.selectedSlots == nil then
+    _G.selectedSlots = {}
+end
+
+-- Obtenemos el jugador local
+local player = game.Players.LocalPlayer
+
+-- Obtenemos la mochila del jugador
+local backpack = player.Backpack
+
+-- Obtenemos todas las herramientas en la mochila
+local tools = backpack:GetChildren()
+
+-- Filtramos las herramientas que aún no se han seleccionado
+local availableSlots = {}
+for _, tool in ipairs(tools) do
+    local selected = false
+    for _, slot in ipairs(_G.selectedSlots) do
+        if tool == slot then
+            selected = true
+            break
+        end
+    end
+    if not selected then
+        table.insert(availableSlots, tool)
+    end
+end
+
+-- Si hay herramientas disponibles para seleccionar, seleccionamos una aleatoria
+if #availableSlots > 0 then
+    local selectedSlot = availableSlots[math.random(1, #availableSlots)]
+    player.Character.Humanoid:EquipTool(selectedSlot)
+    table.insert(_G.selectedSlots, selectedSlot)
+else
+    -- Si ya se han seleccionado todas las casillas, reiniciamos la lista
+    _G.selectedSlots = {}
+end
+
+
+
+
+--Brookhaven Change FireX position "equip the tools again if u run the script while holding the tools to make it fe"
+--By M1zz
+--FE
+
+-- Get the workspace
+local workspace = game:GetService("Workspace")
+
+-- Find your character
+local character = game.Players.LocalPlayer.Character
+
+-- Check if character exists
+if character then
+    -- Find the "FireX" part in the character
+    local fireX = character:FindFirstChild("FireX")
+
+    -- Check if "FireX" part exists
+    if fireX then
+        -- Change the GripPos of "FireX"
+        fireX.GripUp = Vector3.new(0, 10, -1000) -- Change the Vector3 values to your desired position (Left/right,Up/Down,Front/Back)
+    else
+        print("Could not find 'FireX' part in character.")
+    end
+else
+    print("Could not find your character.")
+end
+
+-- Get the workspace
+local workspace = game:GetService("Workspace")
+
+-- Find your character
+local character = game.Players.LocalPlayer.Character
+
+-- Check if character exists
+if character then
+    -- Find the "FireX" part in the character
+    local FireX = character:FindFirstChild("FireX")
+
+    -- Check if "FireX" part exists
+    if FireX then
+        -- Change the GripPos of "FireX"
+        FireX.GripPos = Vector3.new(0, 6, -25) -- Change the Vector3 values to your desired position (Left/right,Up/Down,Front/Back)
+    else
+        print("Could not find 'FireX' part in character.")
+    end
+else
+    print("Could not find your character.")
+end
+
+
+
+
+
+
+
+
+
+
+
+
+
+if _G.selectedSlots == nil then
+    _G.selectedSlots = {}
+end
+
+-- Obtenemos el jugador local
+local player = game.Players.LocalPlayer
+
+-- Obtenemos la mochila del jugador
+local backpack = player.Backpack
+
+-- Obtenemos todas las herramientas en la mochila
+local tools = backpack:GetChildren()
+
+-- Filtramos las herramientas que aún no se han seleccionado
+local availableSlots = {}
+for _, tool in ipairs(tools) do
+    local selected = false
+    for _, slot in ipairs(_G.selectedSlots) do
+        if tool == slot then
+            selected = true
+            break
+        end
+    end
+    if not selected then
+        table.insert(availableSlots, tool)
+    end
+end
+
+-- Si hay herramientas disponibles para seleccionar, seleccionamos una aleatoria
+if #availableSlots > 0 then
+    local selectedSlot = availableSlots[math.random(1, #availableSlots)]
+    player.Character.Humanoid:EquipTool(selectedSlot)
+    table.insert(_G.selectedSlots, selectedSlot)
+else
+    -- Si ya se han seleccionado todas las casillas, reiniciamos la lista
+    _G.selectedSlots = {}
+end
+--Brookhaven Change FireX position "equip the tools again if u run the script while holding the tools to make it fe"
+--By M1zz
+--FE
+
+-- Get the workspace
+local workspace = game:GetService("Workspace")
+
+-- Find your character
+local character = game.Players.LocalPlayer.Character
+
+-- Check if character exists
+if character then
+    -- Find the "FireX" part in the character
+    local fireX = character:FindFirstChild("FireX")
+
+    -- Check if "FireX" part exists
+    if fireX then
+        -- Change the GripPos of "FireX"
+        fireX.GripUp = Vector3.new(0, 10, -1000) -- Change the Vector3 values to your desired position (Left/right,Up/Down,Front/Back)
+    else
+        print("Could not find 'FireX' part in character.")
+    end
+else
+    print("Could not find your character.")
+end
+
+
+-- Get the workspace
+local workspace = game:GetService("Workspace")
+
+-- Find your character
+local character = game.Players.LocalPlayer.Character
+
+-- Check if character exists
+if character then
+    -- Find the "FireX" part in the character
+    local FireX = character:FindFirstChild("FireX")
+
+    -- Check if "FireX" part exists
+    if FireX then
+        -- Change the GripPos of "FireX"
+        FireX.GripPos = Vector3.new(0, 9, -25) -- Change the Vector3 values to your desired position (Left/right,Up/Down,Front/Back)
+    else
+        print("Could not find 'FireX' part in character.")
+    end
+else
+    print("Could not find your character.")
+end
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+if _G.selectedSlots == nil then
+    _G.selectedSlots = {}
+end
+
+-- Obtenemos el jugador local
+local player = game.Players.LocalPlayer
+
+-- Obtenemos la mochila del jugador
+local backpack = player.Backpack
+
+-- Obtenemos todas las herramientas en la mochila
+local tools = backpack:GetChildren()
+
+-- Filtramos las herramientas que aún no se han seleccionado
+local availableSlots = {}
+for _, tool in ipairs(tools) do
+    local selected = false
+    for _, slot in ipairs(_G.selectedSlots) do
+        if tool == slot then
+            selected = true
+            break
+        end
+    end
+    if not selected then
+        table.insert(availableSlots, tool)
+    end
+end
+
+-- Si hay herramientas disponibles para seleccionar, seleccionamos una aleatoria
+if #availableSlots > 0 then
+    local selectedSlot = availableSlots[math.random(1, #availableSlots)]
+    player.Character.Humanoid:EquipTool(selectedSlot)
+    table.insert(_G.selectedSlots, selectedSlot)
+else
+    -- Si ya se han seleccionado todas las casillas, reiniciamos la lista
+    _G.selectedSlots = {}
+end
+--Brookhaven Change FireX position "equip the tools again if u run the script while holding the tools to make it fe"
+--By M1zz
+--FE
+
+-- Get the workspace
+local workspace = game:GetService("Workspace")
+
+-- Find your character
+local character = game.Players.LocalPlayer.Character
+
+-- Check if character exists
+if character then
+    -- Find the "FireX" part in the character
+    local fireX = character:FindFirstChild("FireX")
+
+    -- Check if "FireX" part exists
+    if fireX then
+        -- Change the GripPos of "FireX"
+        fireX.GripUp = Vector3.new(0, 10, -1000) -- Change the Vector3 values to your desired position (Left/right,Up/Down,Front/Back)
+    else
+        print("Could not find 'FireX' part in character.")
+    end
+else
+    print("Could not find your character.")
+end
+
+
+-- Get the workspace
+local workspace = game:GetService("Workspace")
+
+-- Find your character
+local character = game.Players.LocalPlayer.Character
+
+-- Check if character exists
+if character then
+    -- Find the "FireX" part in the character
+    local FireX = character:FindFirstChild("FireX")
+
+    -- Check if "FireX" part exists
+    if FireX then
+        -- Change the GripPos of "FireX"
+        FireX.GripPos = Vector3.new(0, 12, -23) -- Change the Vector3 values to your desired position (Left/right,Up/Down,Front/Back)
+    else
+        print("Could not find 'FireX' part in character.")
+    end
+else
+    print("Could not find your character.")
+end
+
+
+
+
+
+
+
+
+
+
+
+
+
+if _G.selectedSlots == nil then
+    _G.selectedSlots = {}
+end
+
+-- Obtenemos el jugador local
+local player = game.Players.LocalPlayer
+
+-- Obtenemos la mochila del jugador
+local backpack = player.Backpack
+
+-- Obtenemos todas las herramientas en la mochila
+local tools = backpack:GetChildren()
+
+-- Filtramos las herramientas que aún no se han seleccionado
+local availableSlots = {}
+for _, tool in ipairs(tools) do
+    local selected = false
+    for _, slot in ipairs(_G.selectedSlots) do
+        if tool == slot then
+            selected = true
+            break
+        end
+    end
+    if not selected then
+        table.insert(availableSlots, tool)
+    end
+end
+
+-- Si hay herramientas disponibles para seleccionar, seleccionamos una aleatoria
+if #availableSlots > 0 then
+    local selectedSlot = availableSlots[math.random(1, #availableSlots)]
+    player.Character.Humanoid:EquipTool(selectedSlot)
+    table.insert(_G.selectedSlots, selectedSlot)
+else
+    -- Si ya se han seleccionado todas las casillas, reiniciamos la lista
+    _G.selectedSlots = {}
+end
+--Brookhaven Change FireX position "equip the tools again if u run the script while holding the tools to make it fe"
+--By M1zz
+--FE
+
+-- Get the workspace
+local workspace = game:GetService("Workspace")
+
+-- Find your character
+local character = game.Players.LocalPlayer.Character
+
+-- Check if character exists
+if character then
+    -- Find the "FireX" part in the character
+    local fireX = character:FindFirstChild("FireX")
+
+    -- Check if "FireX" part exists
+    if fireX then
+        -- Change the GripPos of "FireX"
+        fireX.GripUp = Vector3.new(0, 10, -1000) -- Change the Vector3 values to your desired position (Left/right,Up/Down,Front/Back)
+    else
+        print("Could not find 'FireX' part in character.")
+    end
+else
+    print("Could not find your character.")
+end
+
+
+-- Get the workspace
+local workspace = game:GetService("Workspace")
+
+-- Find your character
+local character = game.Players.LocalPlayer.Character
+
+-- Check if character exists
+if character then
+    -- Find the "FireX" part in the character
+    local FireX = character:FindFirstChild("FireX")
+
+    -- Check if "FireX" part exists
+    if FireX then
+        -- Change the GripPos of "FireX"
+        FireX.GripPos = Vector3.new(0, 15, -23) -- Change the Vector3 values to your desired position (Left/right,Up/Down,Front/Back)
+    else
+        print("Could not find 'FireX' part in character.")
+    end
+else
+    print("Could not find your character.")
+end
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+if _G.selectedSlots == nil then
+    _G.selectedSlots = {}
+end
+
+-- Obtenemos el jugador local
+local player = game.Players.LocalPlayer
+
+-- Obtenemos la mochila del jugador
+local backpack = player.Backpack
+
+-- Obtenemos todas las herramientas en la mochila
+local tools = backpack:GetChildren()
+
+-- Filtramos las herramientas que aún no se han seleccionado
+local availableSlots = {}
+for _, tool in ipairs(tools) do
+    local selected = false
+    for _, slot in ipairs(_G.selectedSlots) do
+        if tool == slot then
+            selected = true
+            break
+        end
+    end
+    if not selected then
+        table.insert(availableSlots, tool)
+    end
+end
+
+-- Si hay herramientas disponibles para seleccionar, seleccionamos una aleatoria
+if #availableSlots > 0 then
+    local selectedSlot = availableSlots[math.random(1, #availableSlots)]
+    player.Character.Humanoid:EquipTool(selectedSlot)
+    table.insert(_G.selectedSlots, selectedSlot)
+else
+    -- Si ya se han seleccionado todas las casillas, reiniciamos la lista
+    _G.selectedSlots = {}
+end
+--Brookhaven Change FireX position "equip the tools again if u run the script while holding the tools to make it fe"
+--By M1zz
+--FE
+
+-- Get the workspace
+local workspace = game:GetService("Workspace")
+
+-- Find your character
+local character = game.Players.LocalPlayer.Character
+
+-- Check if character exists
+if character then
+    -- Find the "FireX" part in the character
+    local fireX = character:FindFirstChild("FireX")
+
+    -- Check if "FireX" part exists
+    if fireX then
+        -- Change the GripPos of "FireX"
+        fireX.GripUp = Vector3.new(0, 10, -1000) -- Change the Vector3 values to your desired position (Left/right,Up/Down,Front/Back)
+    else
+        print("Could not find 'FireX' part in character.")
+    end
+else
+    print("Could not find your character.")
+end
+
+
+-- Get the workspace
+local workspace = game:GetService("Workspace")
+
+-- Find your character
+local character = game.Players.LocalPlayer.Character
+
+-- Check if character exists
+if character then
+    -- Find the "FireX" part in the character
+    local FireX = character:FindFirstChild("FireX")
+
+    -- Check if "FireX" part exists
+    if FireX then
+        -- Change the GripPos of "FireX"
+        FireX.GripPos = Vector3.new(0, 18, -23) -- Change the Vector3 values to your desired position (Left/right,Up/Down,Front/Back)
+    else
+        print("Could not find 'FireX' part in character.")
+    end
+else
+    print("Could not find your character.")
+end
+
+
+
+
+
+
+
+
+
+
+
+
+
+if _G.selectedSlots == nil then
+    _G.selectedSlots = {}
+end
+
+-- Obtenemos el jugador local
+local player = game.Players.LocalPlayer
+
+-- Obtenemos la mochila del jugador
+local backpack = player.Backpack
+
+-- Obtenemos todas las herramientas en la mochila
+local tools = backpack:GetChildren()
+
+-- Filtramos las herramientas que aún no se han seleccionado
+local availableSlots = {}
+for _, tool in ipairs(tools) do
+    local selected = false
+    for _, slot in ipairs(_G.selectedSlots) do
+        if tool == slot then
+            selected = true
+            break
+        end
+    end
+    if not selected then
+        table.insert(availableSlots, tool)
+    end
+end
+
+-- Si hay herramientas disponibles para seleccionar, seleccionamos una aleatoria
+if #availableSlots > 0 then
+    local selectedSlot = availableSlots[math.random(1, #availableSlots)]
+    player.Character.Humanoid:EquipTool(selectedSlot)
+    table.insert(_G.selectedSlots, selectedSlot)
+else
+    -- Si ya se han seleccionado todas las casillas, reiniciamos la lista
+    _G.selectedSlots = {}
+end
+--Brookhaven Change FireX position "equip the tools again if u run the script while holding the tools to make it fe"
+--By M1zz
+--FE
+
+-- Get the workspace
+local workspace = game:GetService("Workspace")
+
+-- Find your character
+local character = game.Players.LocalPlayer.Character
+
+-- Check if character exists
+if character then
+    -- Find the "FireX" part in the character
+    local fireX = character:FindFirstChild("FireX")
+
+    -- Check if "FireX" part exists
+    if fireX then
+        -- Change the GripPos of "FireX"
+        fireX.GripUp = Vector3.new(0, 10, -1000) -- Change the Vector3 values to your desired position (Left/right,Up/Down,Front/Back)
+    else
+        print("Could not find 'FireX' part in character.")
+    end
+else
+    print("Could not find your character.")
+end
+
+
+-- Get the workspace
+local workspace = game:GetService("Workspace")
+
+-- Find your character
+local character = game.Players.LocalPlayer.Character
+
+-- Check if character exists
+if character then
+    -- Find the "FireX" part in the character
+    local FireX = character:FindFirstChild("FireX")
+
+    -- Check if "FireX" part exists
+    if FireX then
+        -- Change the GripPos of "FireX"
+        FireX.GripPos = Vector3.new(0, 21, -23) -- Change the Vector3 values to your desired position (Left/right,Up/Down,Front/Back)
+    else
+        print("Could not find 'FireX' part in character.")
+    end
+else
+    print("Could not find your character.")
+end
+
+
+
+
+
+
+
+
+
+
+
+
+if _G.selectedSlots == nil then
+    _G.selectedSlots = {}
+end
+
+-- Obtenemos el jugador local
+local player = game.Players.LocalPlayer
+
+-- Obtenemos la mochila del jugador
+local backpack = player.Backpack
+
+-- Obtenemos todas las herramientas en la mochila
+local tools = backpack:GetChildren()
+
+-- Filtramos las herramientas que aún no se han seleccionado
+local availableSlots = {}
+for _, tool in ipairs(tools) do
+    local selected = false
+    for _, slot in ipairs(_G.selectedSlots) do
+        if tool == slot then
+            selected = true
+            break
+        end
+    end
+    if not selected then
+        table.insert(availableSlots, tool)
+    end
+end
+
+-- Si hay herramientas disponibles para seleccionar, seleccionamos una aleatoria
+if #availableSlots > 0 then
+    local selectedSlot = availableSlots[math.random(1, #availableSlots)]
+    player.Character.Humanoid:EquipTool(selectedSlot)
+    table.insert(_G.selectedSlots, selectedSlot)
+else
+    -- Si ya se han seleccionado todas las casillas, reiniciamos la lista
+    _G.selectedSlots = {}
+end
+--Brookhaven Change FireX position "equip the tools again if u run the script while holding the tools to make it fe"
+--By M1zz
+--FE
+
+-- Get the workspace
+local workspace = game:GetService("Workspace")
+
+-- Find your character
+local character = game.Players.LocalPlayer.Character
+
+-- Check if character exists
+if character then
+    -- Find the "FireX" part in the character
+    local fireX = character:FindFirstChild("FireX")
+
+    -- Check if "FireX" part exists
+    if fireX then
+        -- Change the GripPos of "FireX"
+        fireX.GripUp = Vector3.new(0, 10, -1000) -- Change the Vector3 values to your desired position (Left/right,Up/Down,Front/Back)
+    else
+        print("Could not find 'FireX' part in character.")
+    end
+else
+    print("Could not find your character.")
+end
+
+
+-- Get the workspace
+local workspace = game:GetService("Workspace")
+
+-- Find your character
+local character = game.Players.LocalPlayer.Character
+
+-- Check if character exists
+if character then
+    -- Find the "FireX" part in the character
+    local FireX = character:FindFirstChild("FireX")
+
+    -- Check if "FireX" part exists
+    if FireX then
+        -- Change the GripPos of "FireX"
+        FireX.GripPos = Vector3.new(0, 23, -23) -- Change the Vector3 values to your desired position (Left/right,Up/Down,Front/Back)
+    else
+        print("Could not find 'FireX' part in character.")
+    end
+else
+    print("Could not find your character.")
+end
+
+
+
+
+
+
+
+
+
+
+
+
+
+if _G.selectedSlots == nil then
+    _G.selectedSlots = {}
+end
+
+-- Obtenemos el jugador local
+local player = game.Players.LocalPlayer
+
+-- Obtenemos la mochila del jugador
+local backpack = player.Backpack
+
+-- Obtenemos todas las herramientas en la mochila
+local tools = backpack:GetChildren()
+
+-- Filtramos las herramientas que aún no se han seleccionado
+local availableSlots = {}
+for _, tool in ipairs(tools) do
+    local selected = false
+    for _, slot in ipairs(_G.selectedSlots) do
+        if tool == slot then
+            selected = true
+            break
+        end
+    end
+    if not selected then
+        table.insert(availableSlots, tool)
+    end
+end
+
+-- Si hay herramientas disponibles para seleccionar, seleccionamos una aleatoria
+if #availableSlots > 0 then
+    local selectedSlot = availableSlots[math.random(1, #availableSlots)]
+    player.Character.Humanoid:EquipTool(selectedSlot)
+    table.insert(_G.selectedSlots, selectedSlot)
+else
+    -- Si ya se han seleccionado todas las casillas, reiniciamos la lista
+    _G.selectedSlots = {}
+end
+--Brookhaven Change FireX position "equip the tools again if u run the script while holding the tools to make it fe"
+--By M1zz
+--FE
+
+-- Get the workspace
+local workspace = game:GetService("Workspace")
+
+-- Find your character
+local character = game.Players.LocalPlayer.Character
+
+-- Check if character exists
+if character then
+    -- Find the "FireX" part in the character
+    local fireX = character:FindFirstChild("FireX")
+
+    -- Check if "FireX" part exists
+    if fireX then
+        -- Change the GripPos of "FireX"
+        fireX.GripUp = Vector3.new(0, 10, -1000) -- Change the Vector3 values to your desired position (Left/right,Up/Down,Front/Back)
+    else
+        print("Could not find 'FireX' part in character.")
+    end
+else
+    print("Could not find your character.")
+end
+
+
+-- Get the workspace
+local workspace = game:GetService("Workspace")
+
+-- Find your character
+local character = game.Players.LocalPlayer.Character
+
+-- Check if character exists
+if character then
+    -- Find the "FireX" part in the character
+    local FireX = character:FindFirstChild("FireX")
+
+    -- Check if "FireX" part exists
+    if FireX then
+        -- Change the GripPos of "FireX"
+        FireX.GripPos = Vector3.new(0, 26, -23) -- Change the Vector3 values to your desired position (Left/right,Up/Down,Front/Back)
+    else
+        print("Could not find 'FireX' part in character.")
+    end
+else
+    print("Could not find your character.")
+end
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+if _G.selectedSlots == nil then
+    _G.selectedSlots = {}
+end
+
+-- Obtenemos el jugador local
+local player = game.Players.LocalPlayer
+
+-- Obtenemos la mochila del jugador
+local backpack = player.Backpack
+
+-- Obtenemos todas las herramientas en la mochila
+local tools = backpack:GetChildren()
+
+-- Filtramos las herramientas que aún no se han seleccionado
+local availableSlots = {}
+for _, tool in ipairs(tools) do
+    local selected = false
+    for _, slot in ipairs(_G.selectedSlots) do
+        if tool == slot then
+            selected = true
+            break
+        end
+    end
+    if not selected then
+        table.insert(availableSlots, tool)
+    end
+end
+
+-- Si hay herramientas disponibles para seleccionar, seleccionamos una aleatoria
+if #availableSlots > 0 then
+    local selectedSlot = availableSlots[math.random(1, #availableSlots)]
+    player.Character.Humanoid:EquipTool(selectedSlot)
+    table.insert(_G.selectedSlots, selectedSlot)
+else
+    -- Si ya se han seleccionado todas las casillas, reiniciamos la lista
+    _G.selectedSlots = {}
+end
+--Brookhaven Change FireX position "equip the tools again if u run the script while holding the tools to make it fe"
+--By M1zz
+--FE
+
+-- Get the workspace
+local workspace = game:GetService("Workspace")
+
+-- Find your character
+local character = game.Players.LocalPlayer.Character
+
+-- Check if character exists
+if character then
+    -- Find the "FireX" part in the character
+    local fireX = character:FindFirstChild("FireX")
+
+    -- Check if "FireX" part exists
+    if fireX then
+        -- Change the GripPos of "FireX"
+        fireX.GripUp = Vector3.new(0, 10, -1000) -- Change the Vector3 values to your desired position (Left/right,Up/Down,Front/Back)
+    else
+        print("Could not find 'FireX' part in character.")
+    end
+else
+    print("Could not find your character.")
+end
+
+
+-- Get the workspace
+local workspace = game:GetService("Workspace")
+
+-- Find your character
+local character = game.Players.LocalPlayer.Character
+
+-- Check if character exists
+if character then
+    -- Find the "FireX" part in the character
+    local FireX = character:FindFirstChild("FireX")
+
+    -- Check if "FireX" part exists
+    if FireX then
+        -- Change the GripPos of "FireX"
+        FireX.GripPos = Vector3.new(0, 29, -21) -- Change the Vector3 values to your desired position (Left/right,Up/Down,Front/Back)
+    else
+        print("Could not find 'FireX' part in character.")
+    end
+else
+    print("Could not find your character.")
+end
+
+
+
+
+
+
+
+if _G.selectedSlots == nil then
+    _G.selectedSlots = {}
+end
+
+-- Obtenemos el jugador local
+local player = game.Players.LocalPlayer
+
+-- Obtenemos la mochila del jugador
+local backpack = player.Backpack
+
+-- Obtenemos todas las herramientas en la mochila
+local tools = backpack:GetChildren()
+
+-- Filtramos las herramientas que aún no se han seleccionado
+local availableSlots = {}
+for _, tool in ipairs(tools) do
+    local selected = false
+    for _, slot in ipairs(_G.selectedSlots) do
+        if tool == slot then
+            selected = true
+            break
+        end
+    end
+    if not selected then
+        table.insert(availableSlots, tool)
+    end
+end
+
+-- Si hay herramientas disponibles para seleccionar, seleccionamos una aleatoria
+if #availableSlots > 0 then
+    local selectedSlot = availableSlots[math.random(1, #availableSlots)]
+    player.Character.Humanoid:EquipTool(selectedSlot)
+    table.insert(_G.selectedSlots, selectedSlot)
+else
+    -- Si ya se han seleccionado todas las casillas, reiniciamos la lista
+    _G.selectedSlots = {}
+end
+--Brookhaven Change FireX position "equip the tools again if u run the script while holding the tools to make it fe"
+--By M1zz
+--FE
+
+-- Get the workspace
+local workspace = game:GetService("Workspace")
+
+-- Find your character
+local character = game.Players.LocalPlayer.Character
+
+-- Check if character exists
+if character then
+    -- Find the "FireX" part in the character
+    local fireX = character:FindFirstChild("FireX")
+
+    -- Check if "FireX" part exists
+    if fireX then
+        -- Change the GripPos of "FireX"
+        fireX.GripUp = Vector3.new(0, 10, -1000) -- Change the Vector3 values to your desired position (Left/right,Up/Down,Front/Back)
+    else
+        print("Could not find 'FireX' part in character.")
+    end
+else
+    print("Could not find your character.")
+end
+
+
+-- Get the workspace
+local workspace = game:GetService("Workspace")
+
+-- Find your character
+local character = game.Players.LocalPlayer.Character
+
+-- Check if character exists
+if character then
+    -- Find the "FireX" part in the character
+    local FireX = character:FindFirstChild("FireX")
+
+    -- Check if "FireX" part exists
+    if FireX then
+        -- Change the GripPos of "FireX"
+        FireX.GripPos = Vector3.new(0, 32, -21) -- Change the Vector3 values to your desired position (Left/right,Up/Down,Front/Back)
+    else
+        print("Could not find 'FireX' part in character.")
+    end
+else
+    print("Could not find your character.")
+end
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+if _G.selectedSlots == nil then
+    _G.selectedSlots = {}
+end
+
+-- Obtenemos el jugador local
+local player = game.Players.LocalPlayer
+
+-- Obtenemos la mochila del jugador
+local backpack = player.Backpack
+
+-- Obtenemos todas las herramientas en la mochila
+local tools = backpack:GetChildren()
+
+-- Filtramos las herramientas que aún no se han seleccionado
+local availableSlots = {}
+for _, tool in ipairs(tools) do
+    local selected = false
+    for _, slot in ipairs(_G.selectedSlots) do
+        if tool == slot then
+            selected = true
+            break
+        end
+    end
+    if not selected then
+        table.insert(availableSlots, tool)
+    end
+end
+
+-- Si hay herramientas disponibles para seleccionar, seleccionamos una aleatoria
+if #availableSlots > 0 then
+    local selectedSlot = availableSlots[math.random(1, #availableSlots)]
+    player.Character.Humanoid:EquipTool(selectedSlot)
+    table.insert(_G.selectedSlots, selectedSlot)
+else
+    -- Si ya se han seleccionado todas las casillas, reiniciamos la lista
+    _G.selectedSlots = {}
+end
+--Brookhaven Change FireX position "equip the tools again if u run the script while holding the tools to make it fe"
+--By M1zz
+--FE
+
+-- Get the workspace
+local workspace = game:GetService("Workspace")
+
+-- Find your character
+local character = game.Players.LocalPlayer.Character
+
+-- Check if character exists
+if character then
+    -- Find the "FireX" part in the character
+    local fireX = character:FindFirstChild("FireX")
+
+    -- Check if "FireX" part exists
+    if fireX then
+        -- Change the GripPos of "FireX"
+        fireX.GripUp = Vector3.new(0, 10, -1000) -- Change the Vector3 values to your desired position (Left/right,Up/Down,Front/Back)
+    else
+        print("Could not find 'FireX' part in character.")
+    end
+else
+    print("Could not find your character.")
+end
+
+
+-- Get the workspace
+local workspace = game:GetService("Workspace")
+
+-- Find your character
+local character = game.Players.LocalPlayer.Character
+
+-- Check if character exists
+if character then
+    -- Find the "FireX" part in the character
+    local FireX = character:FindFirstChild("FireX")
+
+    -- Check if "FireX" part exists
+    if FireX then
+        -- Change the GripPos of "FireX"
+        FireX.GripPos = Vector3.new(0, 29, -21) -- Change the Vector3 values to your desired position (Left/right,Up/Down,Front/Back)
+    else
+        print("Could not find 'FireX' part in character.")
+    end
+else
+    print("Could not find your character.")
+end
+
+
+
+
+
+
+
+if _G.selectedSlots == nil then
+    _G.selectedSlots = {}
+end
+
+-- Obtenemos el jugador local
+local player = game.Players.LocalPlayer
+
+-- Obtenemos la mochila del jugador
+local backpack = player.Backpack
+
+-- Obtenemos todas las herramientas en la mochila
+local tools = backpack:GetChildren()
+
+-- Filtramos las herramientas que aún no se han seleccionado
+local availableSlots = {}
+for _, tool in ipairs(tools) do
+    local selected = false
+    for _, slot in ipairs(_G.selectedSlots) do
+        if tool == slot then
+            selected = true
+            break
+        end
+    end
+    if not selected then
+        table.insert(availableSlots, tool)
+    end
+end
+
+-- Si hay herramientas disponibles para seleccionar, seleccionamos una aleatoria
+if #availableSlots > 0 then
+    local selectedSlot = availableSlots[math.random(1, #availableSlots)]
+    player.Character.Humanoid:EquipTool(selectedSlot)
+    table.insert(_G.selectedSlots, selectedSlot)
+else
+    -- Si ya se han seleccionado todas las casillas, reiniciamos la lista
+    _G.selectedSlots = {}
+end
+--Brookhaven Change FireX position "equip the tools again if u run the script while holding the tools to make it fe"
+--By M1zz
+--FE
+
+-- Get the workspace
+local workspace = game:GetService("Workspace")
+
+-- Find your character
+local character = game.Players.LocalPlayer.Character
+
+-- Check if character exists
+if character then
+    -- Find the "FireX" part in the character
+    local fireX = character:FindFirstChild("FireX")
+
+    -- Check if "FireX" part exists
+    if fireX then
+        -- Change the GripPos of "FireX"
+        fireX.GripUp = Vector3.new(0, 10, -1000) -- Change the Vector3 values to your desired position (Left/right,Up/Down,Front/Back)
+    else
+        print("Could not find 'FireX' part in character.")
+    end
+else
+    print("Could not find your character.")
+end
+
+
+-- Get the workspace
+local workspace = game:GetService("Workspace")
+
+-- Find your character
+local character = game.Players.LocalPlayer.Character
+
+-- Check if character exists
+if character then
+    -- Find the "FireX" part in the character
+    local FireX = character:FindFirstChild("FireX")
+
+    -- Check if "FireX" part exists
+    if FireX then
+        -- Change the GripPos of "FireX"
+        FireX.GripPos = Vector3.new(0, 35, -21) -- Change the Vector3 values to your desired position (Left/right,Up/Down,Front/Back)
+    else
+        print("Could not find 'FireX' part in character.")
+    end
+else
+    print("Could not find your character.")
+end
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+if _G.selectedSlots == nil then
+    _G.selectedSlots = {}
+end
+
+-- Obtenemos el jugador local
+local player = game.Players.LocalPlayer
+
+-- Obtenemos la mochila del jugador
+local backpack = player.Backpack
+
+-- Obtenemos todas las herramientas en la mochila
+local tools = backpack:GetChildren()
+
+-- Filtramos las herramientas que aún no se han seleccionado
+local availableSlots = {}
+for _, tool in ipairs(tools) do
+    local selected = false
+    for _, slot in ipairs(_G.selectedSlots) do
+        if tool == slot then
+            selected = true
+            break
+        end
+    end
+    if not selected then
+        table.insert(availableSlots, tool)
+    end
+end
+
+-- Si hay herramientas disponibles para seleccionar, seleccionamos una aleatoria
+if #availableSlots > 0 then
+    local selectedSlot = availableSlots[math.random(1, #availableSlots)]
+    player.Character.Humanoid:EquipTool(selectedSlot)
+    table.insert(_G.selectedSlots, selectedSlot)
+else
+    -- Si ya se han seleccionado todas las casillas, reiniciamos la lista
+    _G.selectedSlots = {}
+end
+--Brookhaven Change FireX position "equip the tools again if u run the script while holding the tools to make it fe"
+--By M1zz
+--FE
+
+-- Get the workspace
+local workspace = game:GetService("Workspace")
+
+-- Find your character
+local character = game.Players.LocalPlayer.Character
+
+-- Check if character exists
+if character then
+    -- Find the "FireX" part in the character
+    local fireX = character:FindFirstChild("FireX")
+
+    -- Check if "FireX" part exists
+    if fireX then
+        -- Change the GripPos of "FireX"
+        fireX.GripUp = Vector3.new(0, 10, -1000) -- Change the Vector3 values to your desired position (Left/right,Up/Down,Front/Back)
+    else
+        print("Could not find 'FireX' part in character.")
+    end
+else
+    print("Could not find your character.")
+end
+
+
+-- Get the workspace
+local workspace = game:GetService("Workspace")
+
+-- Find your character
+local character = game.Players.LocalPlayer.Character
+
+-- Check if character exists
+if character then
+    -- Find the "FireX" part in the character
+    local FireX = character:FindFirstChild("FireX")
+
+    -- Check if "FireX" part exists
+    if FireX then
+        -- Change the GripPos of "FireX"
+        FireX.GripPos = Vector3.new(0, 29, -19) -- Change the Vector3 values to your desired position (Left/right,Up/Down,Front/Back)
+    else
+        print("Could not find 'FireX' part in character.")
+    end
+else
+    print("Could not find your character.")
+end
+
+
+
+
+
+
+
+if _G.selectedSlots == nil then
+    _G.selectedSlots = {}
+end
+
+-- Obtenemos el jugador local
+local player = game.Players.LocalPlayer
+
+-- Obtenemos la mochila del jugador
+local backpack = player.Backpack
+
+-- Obtenemos todas las herramientas en la mochila
+local tools = backpack:GetChildren()
+
+-- Filtramos las herramientas que aún no se han seleccionado
+local availableSlots = {}
+for _, tool in ipairs(tools) do
+    local selected = false
+    for _, slot in ipairs(_G.selectedSlots) do
+        if tool == slot then
+            selected = true
+            break
+        end
+    end
+    if not selected then
+        table.insert(availableSlots, tool)
+    end
+end
+
+-- Si hay herramientas disponibles para seleccionar, seleccionamos una aleatoria
+if #availableSlots > 0 then
+    local selectedSlot = availableSlots[math.random(1, #availableSlots)]
+    player.Character.Humanoid:EquipTool(selectedSlot)
+    table.insert(_G.selectedSlots, selectedSlot)
+else
+    -- Si ya se han seleccionado todas las casillas, reiniciamos la lista
+    _G.selectedSlots = {}
+end
+--Brookhaven Change FireX position "equip the tools again if u run the script while holding the tools to make it fe"
+--By M1zz
+--FE
+
+-- Get the workspace
+local workspace = game:GetService("Workspace")
+
+-- Find your character
+local character = game.Players.LocalPlayer.Character
+
+-- Check if character exists
+if character then
+    -- Find the "FireX" part in the character
+    local fireX = character:FindFirstChild("FireX")
+
+    -- Check if "FireX" part exists
+    if fireX then
+        -- Change the GripPos of "FireX"
+        fireX.GripUp = Vector3.new(0, 10, -1000) -- Change the Vector3 values to your desired position (Left/right,Up/Down,Front/Back)
+    else
+        print("Could not find 'FireX' part in character.")
+    end
+else
+    print("Could not find your character.")
+end
+
+
+-- Get the workspace
+local workspace = game:GetService("Workspace")
+
+-- Find your character
+local character = game.Players.LocalPlayer.Character
+
+-- Check if character exists
+if character then
+    -- Find the "FireX" part in the character
+    local FireX = character:FindFirstChild("FireX")
+
+    -- Check if "FireX" part exists
+    if FireX then
+        -- Change the GripPos of "FireX"
+        FireX.GripPos = Vector3.new(0, 38, -19) -- Change the Vector3 values to your desired position (Left/right,Up/Down,Front/Back)
+    else
+        print("Could not find 'FireX' part in character.")
+    end
+else
+    print("Could not find your character.")
+end
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+if _G.selectedSlots == nil then
+    _G.selectedSlots = {}
+end
+
+-- Obtenemos el jugador local
+local player = game.Players.LocalPlayer
+
+-- Obtenemos la mochila del jugador
+local backpack = player.Backpack
+
+-- Obtenemos todas las herramientas en la mochila
+local tools = backpack:GetChildren()
+
+-- Filtramos las herramientas que aún no se han seleccionado
+local availableSlots = {}
+for _, tool in ipairs(tools) do
+    local selected = false
+    for _, slot in ipairs(_G.selectedSlots) do
+        if tool == slot then
+            selected = true
+            break
+        end
+    end
+    if not selected then
+        table.insert(availableSlots, tool)
+    end
+end
+
+-- Si hay herramientas disponibles para seleccionar, seleccionamos una aleatoria
+if #availableSlots > 0 then
+    local selectedSlot = availableSlots[math.random(1, #availableSlots)]
+    player.Character.Humanoid:EquipTool(selectedSlot)
+    table.insert(_G.selectedSlots, selectedSlot)
+else
+    -- Si ya se han seleccionado todas las casillas, reiniciamos la lista
+    _G.selectedSlots = {}
+end
+--Brookhaven Change FireX position "equip the tools again if u run the script while holding the tools to make it fe"
+--By M1zz
+--FE
+
+-- Get the workspace
+local workspace = game:GetService("Workspace")
+
+-- Find your character
+local character = game.Players.LocalPlayer.Character
+
+-- Check if character exists
+if character then
+    -- Find the "FireX" part in the character
+    local fireX = character:FindFirstChild("FireX")
+
+    -- Check if "FireX" part exists
+    if fireX then
+        -- Change the GripPos of "FireX"
+        fireX.GripUp = Vector3.new(0, 10, -1000) -- Change the Vector3 values to your desired position (Left/right,Up/Down,Front/Back)
+    else
+        print("Could not find 'FireX' part in character.")
+    end
+else
+    print("Could not find your character.")
+end
+
+
+-- Get the workspace
+local workspace = game:GetService("Workspace")
+
+-- Find your character
+local character = game.Players.LocalPlayer.Character
+
+-- Check if character exists
+if character then
+    -- Find the "FireX" part in the character
+    local FireX = character:FindFirstChild("FireX")
+
+    -- Check if "FireX" part exists
+    if FireX then
+        -- Change the GripPos of "FireX"
+        FireX.GripPos = Vector3.new(0, 29, -19) -- Change the Vector3 values to your desired position (Left/right,Up/Down,Front/Back)
+    else
+        print("Could not find 'FireX' part in character.")
+    end
+else
+    print("Could not find your character.")
+end
+
+
+
+
+
+
+
+if _G.selectedSlots == nil then
+    _G.selectedSlots = {}
+end
+
+-- Obtenemos el jugador local
+local player = game.Players.LocalPlayer
+
+-- Obtenemos la mochila del jugador
+local backpack = player.Backpack
+
+-- Obtenemos todas las herramientas en la mochila
+local tools = backpack:GetChildren()
+
+-- Filtramos las herramientas que aún no se han seleccionado
+local availableSlots = {}
+for _, tool in ipairs(tools) do
+    local selected = false
+    for _, slot in ipairs(_G.selectedSlots) do
+        if tool == slot then
+            selected = true
+            break
+        end
+    end
+    if not selected then
+        table.insert(availableSlots, tool)
+    end
+end
+
+-- Si hay herramientas disponibles para seleccionar, seleccionamos una aleatoria
+if #availableSlots > 0 then
+    local selectedSlot = availableSlots[math.random(1, #availableSlots)]
+    player.Character.Humanoid:EquipTool(selectedSlot)
+    table.insert(_G.selectedSlots, selectedSlot)
+else
+    -- Si ya se han seleccionado todas las casillas, reiniciamos la lista
+    _G.selectedSlots = {}
+end
+--Brookhaven Change FireX position "equip the tools again if u run the script while holding the tools to make it fe"
+--By M1zz
+--FE
+
+-- Get the workspace
+local workspace = game:GetService("Workspace")
+
+-- Find your character
+local character = game.Players.LocalPlayer.Character
+
+-- Check if character exists
+if character then
+    -- Find the "FireX" part in the character
+    local fireX = character:FindFirstChild("FireX")
+
+    -- Check if "FireX" part exists
+    if fireX then
+        -- Change the GripPos of "FireX"
+        fireX.GripUp = Vector3.new(0, 10, -1000) -- Change the Vector3 values to your desired position (Left/right,Up/Down,Front/Back)
+    else
+        print("Could not find 'FireX' part in character.")
+    end
+else
+    print("Could not find your character.")
+end
+
+
+-- Get the workspace
+local workspace = game:GetService("Workspace")
+
+-- Find your character
+local character = game.Players.LocalPlayer.Character
+
+-- Check if character exists
+if character then
+    -- Find the "FireX" part in the character
+    local FireX = character:FindFirstChild("FireX")
+
+    -- Check if "FireX" part exists
+    if FireX then
+        -- Change the GripPos of "FireX"
+        FireX.GripPos = Vector3.new(0, 41, -19) -- Change the Vector3 values to your desired position (Left/right,Up/Down,Front/Back)
+    else
+        print("Could not find 'FireX' part in character.")
+    end
+else
+    print("Could not find your character.")
+end
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+if _G.selectedSlots == nil then
+    _G.selectedSlots = {}
+end
+
+-- Obtenemos el jugador local
+local player = game.Players.LocalPlayer
+
+-- Obtenemos la mochila del jugador
+local backpack = player.Backpack
+
+-- Obtenemos todas las herramientas en la mochila
+local tools = backpack:GetChildren()
+
+-- Filtramos las herramientas que aún no se han seleccionado
+local availableSlots = {}
+for _, tool in ipairs(tools) do
+    local selected = false
+    for _, slot in ipairs(_G.selectedSlots) do
+        if tool == slot then
+            selected = true
+            break
+        end
+    end
+    if not selected then
+        table.insert(availableSlots, tool)
+    end
+end
+
+-- Si hay herramientas disponibles para seleccionar, seleccionamos una aleatoria
+if #availableSlots > 0 then
+    local selectedSlot = availableSlots[math.random(1, #availableSlots)]
+    player.Character.Humanoid:EquipTool(selectedSlot)
+    table.insert(_G.selectedSlots, selectedSlot)
+else
+    -- Si ya se han seleccionado todas las casillas, reiniciamos la lista
+    _G.selectedSlots = {}
+end
+--Brookhaven Change FireX position "equip the tools again if u run the script while holding the tools to make it fe"
+--By M1zz
+--FE
+
+-- Get the workspace
+local workspace = game:GetService("Workspace")
+
+-- Find your character
+local character = game.Players.LocalPlayer.Character
+
+-- Check if character exists
+if character then
+    -- Find the "FireX" part in the character
+    local fireX = character:FindFirstChild("FireX")
+
+    -- Check if "FireX" part exists
+    if fireX then
+        -- Change the GripPos of "FireX"
+        fireX.GripUp = Vector3.new(0, 10, -1000) -- Change the Vector3 values to your desired position (Left/right,Up/Down,Front/Back)
+    else
+        print("Could not find 'FireX' part in character.")
+    end
+else
+    print("Could not find your character.")
+end
+
+
+-- Get the workspace
+local workspace = game:GetService("Workspace")
+
+-- Find your character
+local character = game.Players.LocalPlayer.Character
+
+-- Check if character exists
+if character then
+    -- Find the "FireX" part in the character
+    local FireX = character:FindFirstChild("FireX")
+
+    -- Check if "FireX" part exists
+    if FireX then
+        -- Change the GripPos of "FireX"
+        FireX.GripPos = Vector3.new(0, 29, -18) -- Change the Vector3 values to your desired position (Left/right,Up/Down,Front/Back)
+    else
+        print("Could not find 'FireX' part in character.")
+    end
+else
+    print("Could not find your character.")
+end
+
+
+
+
+
+
+
+
+
+if _G.selectedSlots == nil then
+    _G.selectedSlots = {}
+end
+
+-- Obtenemos el jugador local
+local player = game.Players.LocalPlayer
+
+-- Obtenemos la mochila del jugador
+local backpack = player.Backpack
+
+-- Obtenemos todas las herramientas en la mochila
+local tools = backpack:GetChildren()
+
+-- Filtramos las herramientas que aún no se han seleccionado
+local availableSlots = {}
+for _, tool in ipairs(tools) do
+    local selected = false
+    for _, slot in ipairs(_G.selectedSlots) do
+        if tool == slot then
+            selected = true
+            break
+        end
+    end
+    if not selected then
+        table.insert(availableSlots, tool)
+    end
+end
+
+-- Si hay herramientas disponibles para seleccionar, seleccionamos una aleatoria
+if #availableSlots > 0 then
+    local selectedSlot = availableSlots[math.random(1, #availableSlots)]
+    player.Character.Humanoid:EquipTool(selectedSlot)
+    table.insert(_G.selectedSlots, selectedSlot)
+else
+    -- Si ya se han seleccionado todas las casillas, reiniciamos la lista
+    _G.selectedSlots = {}
+end
+--Brookhaven Change FireX position "equip the tools again if u run the script while holding the tools to make it fe"
+--By M1zz
+--FE
+
+-- Get the workspace
+local workspace = game:GetService("Workspace")
+
+-- Find your character
+local character = game.Players.LocalPlayer.Character
+
+-- Check if character exists
+if character then
+    -- Find the "FireX" part in the character
+    local fireX = character:FindFirstChild("FireX")
+
+    -- Check if "FireX" part exists
+    if fireX then
+        -- Change the GripPos of "FireX"
+        fireX.GripUp = Vector3.new(0, 10, -1000) -- Change the Vector3 values to your desired position (Left/right,Up/Down,Front/Back)
+    else
+        print("Could not find 'FireX' part in character.")
+    end
+else
+    print("Could not find your character.")
+end
+
+
+-- Get the workspace
+local workspace = game:GetService("Workspace")
+
+-- Find your character
+local character = game.Players.LocalPlayer.Character
+
+-- Check if character exists
+if character then
+    -- Find the "FireX" part in the character
+    local FireX = character:FindFirstChild("FireX")
+
+    -- Check if "FireX" part exists
+    if FireX then
+        -- Change the GripPos of "FireX"
+        FireX.GripPos = Vector3.new(0, 41, -19) -- Change the Vector3 values to your desired position (Left/right,Up/Down,Front/Back)
+    else
+        print("Could not find 'FireX' part in character.")
+    end
+else
+    print("Could not find your character.")
+end
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+if _G.selectedSlots == nil then
+    _G.selectedSlots = {}
+end
+
+-- Obtenemos el jugador local
+local player = game.Players.LocalPlayer
+
+-- Obtenemos la mochila del jugador
+local backpack = player.Backpack
+
+-- Obtenemos todas las herramientas en la mochila
+local tools = backpack:GetChildren()
+
+-- Filtramos las herramientas que aún no se han seleccionado
+local availableSlots = {}
+for _, tool in ipairs(tools) do
+    local selected = false
+    for _, slot in ipairs(_G.selectedSlots) do
+        if tool == slot then
+            selected = true
+            break
+        end
+    end
+    if not selected then
+        table.insert(availableSlots, tool)
+    end
+end
+
+-- Si hay herramientas disponibles para seleccionar, seleccionamos una aleatoria
+if #availableSlots > 0 then
+    local selectedSlot = availableSlots[math.random(1, #availableSlots)]
+    player.Character.Humanoid:EquipTool(selectedSlot)
+    table.insert(_G.selectedSlots, selectedSlot)
+else
+    -- Si ya se han seleccionado todas las casillas, reiniciamos la lista
+    _G.selectedSlots = {}
+end
+--Brookhaven Change FireX position "equip the tools again if u run the script while holding the tools to make it fe"
+--By M1zz
+--FE
+
+-- Get the workspace
+local workspace = game:GetService("Workspace")
+
+-- Find your character
+local character = game.Players.LocalPlayer.Character
+
+-- Check if character exists
+if character then
+    -- Find the "FireX" part in the character
+    local fireX = character:FindFirstChild("FireX")
+
+    -- Check if "FireX" part exists
+    if fireX then
+        -- Change the GripPos of "FireX"
+        fireX.GripUp = Vector3.new(0, 10, -1000) -- Change the Vector3 values to your desired position (Left/right,Up/Down,Front/Back)
+    else
+        print("Could not find 'FireX' part in character.")
+    end
+else
+    print("Could not find your character.")
+end
+
+
+-- Get the workspace
+local workspace = game:GetService("Workspace")
+
+-- Find your character
+local character = game.Players.LocalPlayer.Character
+
+-- Check if character exists
+if character then
+    -- Find the "FireX" part in the character
+    local FireX = character:FindFirstChild("FireX")
+
+    -- Check if "FireX" part exists
+    if FireX then
+        -- Change the GripPos of "FireX"
+        FireX.GripPos = Vector3.new(0, 41, -18) -- Change the Vector3 values to your desired position (Left/right,Up/Down,Front/Back)
+    else
+        print("Could not find 'FireX' part in character.")
+    end
+else
+    print("Could not find your character.")
+end
+
+
+
+
+
+if _G.selectedSlots == nil then
+    _G.selectedSlots = {}
+end
+
+-- Obtenemos el jugador local
+local player = game.Players.LocalPlayer
+
+-- Obtenemos la mochila del jugador
+local backpack = player.Backpack
+
+-- Obtenemos todas las herramientas en la mochila
+local tools = backpack:GetChildren()
+
+-- Filtramos las herramientas que aún no se han seleccionado
+local availableSlots = {}
+for _, tool in ipairs(tools) do
+    local selected = false
+    for _, slot in ipairs(_G.selectedSlots) do
+        if tool == slot then
+            selected = true
+            break
+        end
+    end
+    if not selected then
+        table.insert(availableSlots, tool)
+    end
+end
+
+-- Si hay herramientas disponibles para seleccionar, seleccionamos una aleatoria
+if #availableSlots > 0 then
+    local selectedSlot = availableSlots[math.random(1, #availableSlots)]
+    player.Character.Humanoid:EquipTool(selectedSlot)
+    table.insert(_G.selectedSlots, selectedSlot)
+else
+    -- Si ya se han seleccionado todas las casillas, reiniciamos la lista
+    _G.selectedSlots = {}
+end
+--Brookhaven Change FireX position "equip the tools again if u run the script while holding the tools to make it fe"
+--By M1zz
+--FE
+
+-- Get the workspace
+local workspace = game:GetService("Workspace")
+
+-- Find your character
+local character = game.Players.LocalPlayer.Character
+
+-- Check if character exists
+if character then
+    -- Find the "FireX" part in the character
+    local fireX = character:FindFirstChild("FireX")
+
+    -- Check if "FireX" part exists
+    if fireX then
+        -- Change the GripPos of "FireX"
+        fireX.GripUp = Vector3.new(0, 10, -1000) -- Change the Vector3 values to your desired position (Left/right,Up/Down,Front/Back)
+    else
+        print("Could not find 'FireX' part in character.")
+    end
+else
+    print("Could not find your character.")
+end
+
+
+-- Get the workspace
+local workspace = game:GetService("Workspace")
+
+-- Find your character
+local character = game.Players.LocalPlayer.Character
+
+-- Check if character exists
+if character then
+    -- Find the "FireX" part in the character
+    local FireX = character:FindFirstChild("FireX")
+
+    -- Check if "FireX" part exists
+    if FireX then
+        -- Change the GripPos of "FireX"
+        FireX.GripPos = Vector3.new(0, 44, -17) -- Change the Vector3 values to your desired position (Left/right,Up/Down,Front/Back)
+    else
+        print("Could not find 'FireX' part in character.")
+    end
+else
+    print("Could not find your character.")
+end
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+if _G.selectedSlots == nil then
+    _G.selectedSlots = {}
+end
+
+-- Obtenemos el jugador local
+local player = game.Players.LocalPlayer
+
+-- Obtenemos la mochila del jugador
+local backpack = player.Backpack
+
+-- Obtenemos todas las herramientas en la mochila
+local tools = backpack:GetChildren()
+
+-- Filtramos las herramientas que aún no se han seleccionado
+local availableSlots = {}
+for _, tool in ipairs(tools) do
+    local selected = false
+    for _, slot in ipairs(_G.selectedSlots) do
+        if tool == slot then
+            selected = true
+            break
+        end
+    end
+    if not selected then
+        table.insert(availableSlots, tool)
+    end
+end
+
+-- Si hay herramientas disponibles para seleccionar, seleccionamos una aleatoria
+if #availableSlots > 0 then
+    local selectedSlot = availableSlots[math.random(1, #availableSlots)]
+    player.Character.Humanoid:EquipTool(selectedSlot)
+    table.insert(_G.selectedSlots, selectedSlot)
+else
+    -- Si ya se han seleccionado todas las casillas, reiniciamos la lista
+    _G.selectedSlots = {}
+end
+--Brookhaven Change FireX position "equip the tools again if u run the script while holding the tools to make it fe"
+--By M1zz
+--FE
+
+-- Get the workspace
+local workspace = game:GetService("Workspace")
+
+-- Find your character
+local character = game.Players.LocalPlayer.Character
+
+-- Check if character exists
+if character then
+    -- Find the "FireX" part in the character
+    local fireX = character:FindFirstChild("FireX")
+
+    -- Check if "FireX" part exists
+    if fireX then
+        -- Change the GripPos of "FireX"
+        fireX.GripUp = Vector3.new(0, 10, -1000) -- Change the Vector3 values to your desired position (Left/right,Up/Down,Front/Back)
+    else
+        print("Could not find 'FireX' part in character.")
+    end
+else
+    print("Could not find your character.")
+end
+
+
+-- Get the workspace
+local workspace = game:GetService("Workspace")
+
+-- Find your character
+local character = game.Players.LocalPlayer.Character
+
+-- Check if character exists
+if character then
+    -- Find the "FireX" part in the character
+    local FireX = character:FindFirstChild("FireX")
+
+    -- Check if "FireX" part exists
+    if FireX then
+        -- Change the GripPos of "FireX"
+        FireX.GripPos = Vector3.new(0, 41, -18) -- Change the Vector3 values to your desired position (Left/right,Up/Down,Front/Back)
+    else
+        print("Could not find 'FireX' part in character.")
+    end
+else
+    print("Could not find your character.")
+end
+
+
+
+
+
+
+
+
+
+
+
+
+if _G.selectedSlots == nil then
+    _G.selectedSlots = {}
+end
+
+-- Obtenemos el jugador local
+local player = game.Players.LocalPlayer
+
+-- Obtenemos la mochila del jugador
+local backpack = player.Backpack
+
+-- Obtenemos todas las herramientas en la mochila
+local tools = backpack:GetChildren()
+
+-- Filtramos las herramientas que aún no se han seleccionado
+local availableSlots = {}
+for _, tool in ipairs(tools) do
+    local selected = false
+    for _, slot in ipairs(_G.selectedSlots) do
+        if tool == slot then
+            selected = true
+            break
+        end
+    end
+    if not selected then
+        table.insert(availableSlots, tool)
+    end
+end
+
+-- Si hay herramientas disponibles para seleccionar, seleccionamos una aleatoria
+if #availableSlots > 0 then
+    local selectedSlot = availableSlots[math.random(1, #availableSlots)]
+    player.Character.Humanoid:EquipTool(selectedSlot)
+    table.insert(_G.selectedSlots, selectedSlot)
+else
+    -- Si ya se han seleccionado todas las casillas, reiniciamos la lista
+    _G.selectedSlots = {}
+end
+--Brookhaven Change FireX position "equip the tools again if u run the script while holding the tools to make it fe"
+--By M1zz
+--FE
+
+-- Get the workspace
+local workspace = game:GetService("Workspace")
+
+-- Find your character
+local character = game.Players.LocalPlayer.Character
+
+-- Check if character exists
+if character then
+    -- Find the "FireX" part in the character
+    local fireX = character:FindFirstChild("FireX")
+
+    -- Check if "FireX" part exists
+    if fireX then
+        -- Change the GripPos of "FireX"
+        fireX.GripUp = Vector3.new(0, 10, -1000) -- Change the Vector3 values to your desired position (Left/right,Up/Down,Front/Back)
+    else
+        print("Could not find 'FireX' part in character.")
+    end
+else
+    print("Could not find your character.")
+end
+
+
+-- Get the workspace
+local workspace = game:GetService("Workspace")
+
+-- Find your character
+local character = game.Players.LocalPlayer.Character
+
+-- Check if character exists
+if character then
+    -- Find the "FireX" part in the character
+    local FireX = character:FindFirstChild("FireX")
+
+    -- Check if "FireX" part exists
+    if FireX then
+        -- Change the GripPos of "FireX"
+        FireX.GripPos = Vector3.new(0, 44, -17) -- Change the Vector3 values to your desired position (Left/right,Up/Down,Front/Back)
+    else
+        print("Could not find 'FireX' part in character.")
+    end
+else
+    print("Could not find your character.")
+end
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+if _G.selectedSlots == nil then
+    _G.selectedSlots = {}
+end
+
+-- Obtenemos el jugador local
+local player = game.Players.LocalPlayer
+
+-- Obtenemos la mochila del jugador
+local backpack = player.Backpack
+
+-- Obtenemos todas las herramientas en la mochila
+local tools = backpack:GetChildren()
+
+-- Filtramos las herramientas que aún no se han seleccionado
+local availableSlots = {}
+for _, tool in ipairs(tools) do
+    local selected = false
+    for _, slot in ipairs(_G.selectedSlots) do
+        if tool == slot then
+            selected = true
+            break
+        end
+    end
+    if not selected then
+        table.insert(availableSlots, tool)
+    end
+end
+
+-- Si hay herramientas disponibles para seleccionar, seleccionamos una aleatoria
+if #availableSlots > 0 then
+    local selectedSlot = availableSlots[math.random(1, #availableSlots)]
+    player.Character.Humanoid:EquipTool(selectedSlot)
+    table.insert(_G.selectedSlots, selectedSlot)
+else
+    -- Si ya se han seleccionado todas las casillas, reiniciamos la lista
+    _G.selectedSlots = {}
+end
+--Brookhaven Change FireX position "equip the tools again if u run the script while holding the tools to make it fe"
+--By M1zz
+--FE
+
+-- Get the workspace
+local workspace = game:GetService("Workspace")
+
+-- Find your character
+local character = game.Players.LocalPlayer.Character
+
+-- Check if character exists
+if character then
+    -- Find the "FireX" part in the character
+    local fireX = character:FindFirstChild("FireX")
+
+    -- Check if "FireX" part exists
+    if fireX then
+        -- Change the GripPos of "FireX"
+        fireX.GripUp = Vector3.new(0, 10, -1000) -- Change the Vector3 values to your desired position (Left/right,Up/Down,Front/Back)
+    else
+        print("Could not find 'FireX' part in character.")
+    end
+else
+    print("Could not find your character.")
+end
+
+
+-- Get the workspace
+local workspace = game:GetService("Workspace")
+
+-- Find your character
+local character = game.Players.LocalPlayer.Character
+
+-- Check if character exists
+if character then
+    -- Find the "FireX" part in the character
+    local FireX = character:FindFirstChild("FireX")
+
+    -- Check if "FireX" part exists
+    if FireX then
+        -- Change the GripPos of "FireX"
+        FireX.GripPos = Vector3.new(0, 47, -18) -- Change the Vector3 values to your desired position (Left/right,Up/Down,Front/Back)
+    else
+        print("Could not find 'FireX' part in character.")
+    end
+else
+    print("Could not find your character.")
+end
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+if _G.selectedSlots == nil then
+    _G.selectedSlots = {}
+end
+
+-- Obtenemos el jugador local
+local player = game.Players.LocalPlayer
+
+-- Obtenemos la mochila del jugador
+local backpack = player.Backpack
+
+-- Obtenemos todas las herramientas en la mochila
+local tools = backpack:GetChildren()
+
+-- Filtramos las herramientas que aún no se han seleccionado
+local availableSlots = {}
+for _, tool in ipairs(tools) do
+    local selected = false
+    for _, slot in ipairs(_G.selectedSlots) do
+        if tool == slot then
+            selected = true
+            break
+        end
+    end
+    if not selected then
+        table.insert(availableSlots, tool)
+    end
+end
+
+-- Si hay herramientas disponibles para seleccionar, seleccionamos una aleatoria
+if #availableSlots > 0 then
+    local selectedSlot = availableSlots[math.random(1, #availableSlots)]
+    player.Character.Humanoid:EquipTool(selectedSlot)
+    table.insert(_G.selectedSlots, selectedSlot)
+else
+    -- Si ya se han seleccionado todas las casillas, reiniciamos la lista
+    _G.selectedSlots = {}
+end
+--Brookhaven Change FireX position "equip the tools again if u run the script while holding the tools to make it fe"
+--By M1zz
+--FE
+
+-- Get the workspace
+local workspace = game:GetService("Workspace")
+
+-- Find your character
+local character = game.Players.LocalPlayer.Character
+
+-- Check if character exists
+if character then
+    -- Find the "FireX" part in the character
+    local fireX = character:FindFirstChild("FireX")
+
+    -- Check if "FireX" part exists
+    if fireX then
+        -- Change the GripPos of "FireX"
+        fireX.GripUp = Vector3.new(0, 10, -1000) -- Change the Vector3 values to your desired position (Left/right,Up/Down,Front/Back)
+    else
+        print("Could not find 'FireX' part in character.")
+    end
+else
+    print("Could not find your character.")
+end
+
+
+-- Get the workspace
+local workspace = game:GetService("Workspace")
+
+-- Find your character
+local character = game.Players.LocalPlayer.Character
+
+-- Check if character exists
+if character then
+    -- Find the "FireX" part in the character
+    local FireX = character:FindFirstChild("FireX")
+
+    -- Check if "FireX" part exists
+    if FireX then
+        -- Change the GripPos of "FireX"
+        FireX.GripPos = Vector3.new(0, 50, -17) -- Change the Vector3 values to your desired position (Left/right,Up/Down,Front/Back)
+    else
+        print("Could not find 'FireX' part in character.")
+    end
+else
+    print("Could not find your character.")
+end
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+if _G.selectedSlots == nil then
+    _G.selectedSlots = {}
+end
+
+-- Obtenemos el jugador local
+local player = game.Players.LocalPlayer
+
+-- Obtenemos la mochila del jugador
+local backpack = player.Backpack
+
+-- Obtenemos todas las herramientas en la mochila
+local tools = backpack:GetChildren()
+
+-- Filtramos las herramientas que aún no se han seleccionado
+local availableSlots = {}
+for _, tool in ipairs(tools) do
+    local selected = false
+    for _, slot in ipairs(_G.selectedSlots) do
+        if tool == slot then
+            selected = true
+            break
+        end
+    end
+    if not selected then
+        table.insert(availableSlots, tool)
+    end
+end
+
+-- Si hay herramientas disponibles para seleccionar, seleccionamos una aleatoria
+if #availableSlots > 0 then
+    local selectedSlot = availableSlots[math.random(1, #availableSlots)]
+    player.Character.Humanoid:EquipTool(selectedSlot)
+    table.insert(_G.selectedSlots, selectedSlot)
+else
+    -- Si ya se han seleccionado todas las casillas, reiniciamos la lista
+    _G.selectedSlots = {}
+end
+--Brookhaven Change FireX position "equip the tools again if u run the script while holding the tools to make it fe"
+--By M1zz
+--FE
+
+-- Get the workspace
+local workspace = game:GetService("Workspace")
+
+-- Find your character
+local character = game.Players.LocalPlayer.Character
+
+-- Check if character exists
+if character then
+    -- Find the "FireX" part in the character
+    local fireX = character:FindFirstChild("FireX")
+
+    -- Check if "FireX" part exists
+    if fireX then
+        -- Change the GripPos of "FireX"
+        fireX.GripUp = Vector3.new(0, 10, -1000) -- Change the Vector3 values to your desired position (Left/right,Up/Down,Front/Back)
+    else
+        print("Could not find 'FireX' part in character.")
+    end
+else
+    print("Could not find your character.")
+end
+
+
+-- Get the workspace
+local workspace = game:GetService("Workspace")
+
+-- Find your character
+local character = game.Players.LocalPlayer.Character
+
+-- Check if character exists
+if character then
+    -- Find the "FireX" part in the character
+    local FireX = character:FindFirstChild("FireX")
+
+    -- Check if "FireX" part exists
+    if FireX then
+        -- Change the GripPos of "FireX"
+        FireX.GripPos = Vector3.new(0, 53, -17) -- Change the Vector3 values to your desired position (Left/right,Up/Down,Front/Back)
+    else
+        print("Could not find 'FireX' part in character.")
+    end
+else
+    print("Could not find your character.")
+end
+
+
